@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/android-fundamental-kt.iml" filepath="$PROJECT_DIR$/.idea/modules/android-fundamental-kt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Android_Fundamental.iml" filepath="$PROJECT_DIR$/.idea/modules/Android_Fundamental.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Android_Fundamental.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Android_Fundamental.app.iml" />
     </modules>
   </component>
 </project>
