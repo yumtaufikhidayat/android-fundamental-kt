@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Android Fundamental</string>
+    <string name="tvLength">Panjang</string>
+    <string name="tvWidth">Lebar</string>
+    <string name="tvHeight">Tinggi</string>
+    <string name="tvResult">Hasil</string>
+    <string name="actionResult">Hitung</string>
 </resources>
