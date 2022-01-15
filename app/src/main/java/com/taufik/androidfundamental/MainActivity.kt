@@ -1,104 +1,85 @@
 package com.taufik.androidfundamental
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
-import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
+import com.taufik.androidfundamental.data.Person
 import com.taufik.androidfundamental.databinding.ActivityMainBinding
+import com.taufik.androidfundamental.intent.MoveActivity
+import com.taufik.androidfundamental.intent.MoveWithDataActivity
+import com.taufik.androidfundamental.intent.MoveWithObjectActivity
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
-
-    companion object {
-        private const val TAG = "MAIN_ACTIVITY"
-    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        Log.i(TAG, "onCreate: ")
-
-        if (savedInstanceState != null) {
-            binding.apply {
-                val volume = savedInstanceState.getString(TAG)
-                tvResult.text = volume
-            }
-        }
-
-        result()
+        setMoveActivity()
+        setMoveActivityWithData()
+        setMoveActivityWithObject()
+        setDialANumber()
     }
 
-    private fun result() {
+    private fun setMoveActivity() {
         binding.apply {
-            btnResult.setOnClickListener {
-
-                var isEmptyField = false
-
-                val length = etLength.text.toString().trim()
-                val width = etWidth.text.toString().trim()
-                val height = etHeight.text.toString().trim()
-
-                if (length.isEmpty()) {
-                    isEmptyField = true
-                    etLength.error = "Field ini tidak boleh kosong"
-                }
-
-                if (width.isEmpty()) {
-                    isEmptyField = true
-                    etWidth.error = "Field ini tidak boleh kosong"
-                }
-
-                if (height.isEmpty()) {
-                    isEmptyField = true
-                    etHeight.error = "Field ini tidak boleh kosong"
-                }
-
-                if (!isEmptyField) {
-                    val volume = length.toDouble() * width.toDouble() * height.toDouble()
-                    tvResult.text = volume.toString()
-                }
+            btnMoveActivity.setOnClickListener {
+                startActivity(Intent(this@MainActivity, MoveActivity::class.java))
             }
         }
     }
 
-    override fun onStart() {
-        super.onStart()
-        Log.i(TAG, "onStart: ")
-    }
-
-    override fun onResume() {
-        super.onResume()
-        Log.i(TAG, "onResume: ")
-    }
-
-    override fun onPause() {
-        super.onPause()
-        Log.i(TAG, "onPause: ")
-    }
-
-    override fun onStop() {
-        super.onStop()
-        Log.i(TAG, "onStop: ")
-    }
-
-    override fun onRestart() {
-        super.onRestart()
-        Log.i(TAG, "onRestart: ")
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-        Log.i(TAG, "onDestroy: ")
-    }
-
-    override fun onSaveInstanceState(outState: Bundle) {
-        super.onSaveInstanceState(outState)
+    private fun setMoveActivityWithData() {
         binding.apply {
-            outState.putString(TAG, tvResult.text.toString())
+            btnMoveActivityWithData.setOnClickListener {
+                val intent = Intent(this@MainActivity, MoveWithDataActivity::class.java).apply {
+                    putExtra(MoveWithDataActivity.EXTRA_TITLE, "Activity Dengan Data")
+                    putExtra(MoveWithDataActivity.EXTRA_AGE, 18)
+                    putExtra(MoveWithDataActivity.EXTRA_NAME, "Asep Saepudin")
+                }
+                startActivity(intent)
+            }
         }
+    }
 
-        Log.i(TAG, "onSaveInstanceState: ")
+    private fun setMoveActivityWithObject() {
+        binding.apply {
+            btnMoveActivityWithObject.setOnClickListener {
+                val person1 = Person(
+                    "Pindah Activity Object",
+                    "Asep Saepudin",
+                    18,
+                    "asep@gmail.com",
+                    "Bandung"
+                )
+
+                val person2 = Person(
+                    "Pindah Activity Object",
+                    "Zharfan Wafiq",
+                    20,
+                    "wafiq@gmail.com",
+                    "Jambi"
+                )
+
+                val intent = Intent(this@MainActivity, MoveWithObjectActivity::class.java).apply {
+                    putExtra(MoveWithObjectActivity.EXTRA_PERSON_1, person1)
+                    putExtra(MoveWithObjectActivity.EXTRA_PERSON_2, person2)
+                }
+                startActivity(intent)
+            }
+        }
+    }
+
+    private fun setDialANumber() {
+        binding.apply {
+            btnDialANumber.setOnClickListener {
+                val phoneNumber = "085296257704"
+                startActivity(Intent(Intent.ACTION_DIAL, Uri.parse("tel:$phoneNumber")))
+            }
+        }
     }
 }
