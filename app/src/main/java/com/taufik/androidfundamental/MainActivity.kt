@@ -1,6 +1,7 @@
 package com.taufik.androidfundamental
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.taufik.androidfundamental.data.Person
@@ -21,6 +22,7 @@ class MainActivity : AppCompatActivity() {
         setMoveActivity()
         setMoveActivityWithData()
         setMoveActivityWithObject()
+        setDialANumber()
     }
 
     private fun setMoveActivity() {
@@ -68,6 +70,15 @@ class MainActivity : AppCompatActivity() {
                     putExtra(MoveWithObjectActivity.EXTRA_PERSON_2, person2)
                 }
                 startActivity(intent)
+            }
+        }
+    }
+
+    private fun setDialANumber() {
+        binding.apply {
+            btnDialANumber.setOnClickListener {
+                val phoneNumber = "085296257704"
+                startActivity(Intent(Intent.ACTION_DIAL, Uri.parse("tel:$phoneNumber")))
             }
         }
     }
