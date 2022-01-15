@@ -4,5 +4,22 @@
     <string name="tvWidth">Lebar</string>
     <string name="tvHeight">Tinggi</string>
     <string name="tvResult">Hasil</string>
+    <string name="tvResultFromActivity">Hasil Dari Activity</string>
+
+    <string name="_50">50</string>
+    <string name="_100">100</string>
+    <string name="_150">150</string>
+    <string name="_200">200</string>
+    <string name="tvChoose">Pilih</string>
+    <string name="tvDataReceived">Data Diterima</string>
+    <string name="tvObjectReceived">Object Diterima</string>
+    <string name="tvThisIsMoveActivity">Ini MoveActivity</string>
+
     <string name="actionResult">Hitung</string>
+    <string name="actionMoveActivity">Pindah Activity</string>
+    <string name="actionMoveActivityWithData">Pindah Activity Dengan Data</string>
+    <string name="actionMoveActivityWithObject">Pindah Activity Dengan Object</string>
+    <string name="actionDialNumber">Dial A Number</string>
+    <string name="actionMoveActivityForResult">Pindah Activity Untuk Result</string>
+
 </resources>
