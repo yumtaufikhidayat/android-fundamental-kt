@@ -11,6 +11,7 @@
     <string name="_150">150</string>
     <string name="_200">200</string>
     <string name="tvChoose">Pilih</string>
+    <string name="tvChooseNumber">Pilih Angka Yang Kamu Suka</string>
     <string name="tvDataReceived">Data Diterima</string>
     <string name="tvObjectReceived">Object Diterima</string>
     <string name="tvThisIsMoveActivity">Ini MoveActivity</string>
