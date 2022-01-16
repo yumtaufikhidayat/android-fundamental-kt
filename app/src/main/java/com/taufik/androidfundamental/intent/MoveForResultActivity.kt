@@ -13,7 +13,7 @@ class MoveForResultActivity : AppCompatActivity() {
 
     companion object {
         const val EXTRA_SELECTED_VALUE = "com.taufik.androidfundamental.intent.EXTRA_SELECTED_VALUE"
-        const val RESULT_CODE = 1100
+        const val RESULT_CODE = 110
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
