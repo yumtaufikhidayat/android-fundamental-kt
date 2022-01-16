@@ -10,17 +10,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidFundamental">
         <activity
+            android:name=".debug.DebugActivity"
+            android:exported="false" />
+        <activity
             android:name=".intent.MoveForResultActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".intent.MoveActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".intent.MoveWithDataActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".intent.MoveWithObjectActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".VolumeActivity"
             android:exported="false" />
