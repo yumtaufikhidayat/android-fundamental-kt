@@ -47,6 +47,7 @@ class DebugActivity : AppCompatActivity(), View.OnClickListener {
         names.add("Narenda Wicaksono")
         names.add("Kevin")
         names.add("Yoza")
+        names.add("Saepul")
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
@@ -61,7 +62,7 @@ class DebugActivity : AppCompatActivity(), View.OnClickListener {
             R.id.btnSetValue -> {
                 Log.d(TAG, names.toString())
                 val name = StringBuilder()
-                for (i in 0..2) {
+                for (i in 0..3) {
                     name.append(names[i]).append("\n")
                 }
                 tvText.text = name.toString()
