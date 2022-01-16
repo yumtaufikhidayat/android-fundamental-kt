@@ -3,10 +3,12 @@ package com.taufik.androidfundamental
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import com.taufik.androidfundamental.data.Person
 import com.taufik.androidfundamental.databinding.ActivityMainBinding
 import com.taufik.androidfundamental.intent.MoveActivity
+import com.taufik.androidfundamental.intent.MoveForResultActivity
 import com.taufik.androidfundamental.intent.MoveWithDataActivity
 import com.taufik.androidfundamental.intent.MoveWithObjectActivity
 
@@ -23,6 +25,7 @@ class MainActivity : AppCompatActivity() {
         setMoveActivityWithData()
         setMoveActivityWithObject()
         setDialANumber()
+        setMoveActivityForResult()
     }
 
     private fun setMoveActivity() {
@@ -79,6 +82,28 @@ class MainActivity : AppCompatActivity() {
             btnDialANumber.setOnClickListener {
                 val phoneNumber = "085296257704"
                 startActivity(Intent(Intent.ACTION_DIAL, Uri.parse("tel:$phoneNumber")))
+            }
+        }
+    }
+
+    private val resultLauncher = registerForActivityResult(
+        ActivityResultContracts.StartActivityForResult()
+    ) { result ->
+        if (result.resultCode == MoveForResultActivity.RESULT_CODE && result.data != null) {
+            val selectedValue = result.data?.getIntExtra(MoveForResultActivity.EXTRA_SELECTED_VALUE, 0)
+            val text = "Hasil: $selectedValue"
+
+            binding.apply {
+                tvResult.text = text
+            }
+        }
+    }
+
+    private fun setMoveActivityForResult() {
+        binding.apply {
+            btnMoveActivityForResult.setOnClickListener {
+                val moveForResultIntent = Intent(this@MainActivity, MoveForResultActivity::class.java)
+                resultLauncher.launch(moveForResultIntent)
             }
         }
     }
