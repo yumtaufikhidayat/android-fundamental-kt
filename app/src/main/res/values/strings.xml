@@ -19,11 +19,29 @@
     <string name="tvSetValue">Set Nilai</string>
     <string name="tvHelloWorld">Hello World!</string>
 
+    <string name="tvThisProfile">Ini activity Profile</string>
+    <string name="tvThisCategory">Ini fragment Category</string>
+    <string name="tvCategoryLifestyle">Ke fragment Lifestyle</string>
+    <string name="tvCategoryName">Category Name</string>
+    <string name="tvCategoryDescription">Category Description</string>
+    <string name="tvToProfile">Ke Halaman Profile Activity</string>
+    <string name="tvShowDialog">Tampilkan sebuah dialog</string>
+    <string name="helloHomeFragment">Hello Ini Home Fragment</string>
+    <string name="tvToCategory">Ke fragment Category</string>
+    <string name="tvQuestionCoach">Siapa pelatih tersukses Machester United?</string>
+    <string name="tvSirAlexFerguson">Sir Alex Ferguson</string>
+    <string name="tvJoseMourinho">Jose Mourinho</string>
+    <string name="tvLouisVanGaal">Louis Van Gaal</string>
+    <string name="tvDavidMoyes">David Moyes</string>
+    <string name="tvClose">Tutup</string>
+
     <string name="actionResult">Hitung</string>
     <string name="actionMoveActivity">Pindah Activity</string>
     <string name="actionMoveActivityWithData">Pindah Activity Dengan Data</string>
     <string name="actionMoveActivityWithObject">Pindah Activity Dengan Object</string>
     <string name="actionDialNumber">Dial A Number</string>
     <string name="actionMoveActivityForResult">Pindah Activity Untuk Result</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
