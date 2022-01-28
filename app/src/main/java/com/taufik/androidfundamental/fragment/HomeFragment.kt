@@ -24,6 +24,20 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // TODO: home fragment
+        setActionCategory()
+    }
+
+    private fun setActionCategory() {
+        binding.apply {
+            btnCategory.setOnClickListener {
+                val mCategoryFragment = CategoryFragment()
+                val mFragmentManager = parentFragmentManager
+                mFragmentManager.beginTransaction().apply {
+                    replace(R.id.frameContainer, mCategoryFragment, CategoryFragment::class.java.simpleName)
+                    addToBackStack(null)
+                    commit()
+                }
+            }
+        }
     }
 }
