@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.taufik.androidfundamental.R
 import com.taufik.androidfundamental.databinding.FragmentCategoryBinding
 
 class CategoryFragment : Fragment() {
@@ -22,5 +23,23 @@ class CategoryFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        setDetailCategoryFragment()
+    }
+
+    private fun setDetailCategoryFragment() {
+        val mDetailCategoryFragment = DetailCategoryFragment()
+        val mBundle = Bundle()
+        mBundle.putString(DetailCategoryFragment.EXTRA_NAME, "Lifestyle")
+        val description = "Kategori ini akan berisi produk-produk lifestyle"
+        mDetailCategoryFragment.arguments = mBundle
+        mDetailCategoryFragment.description = description
+
+        val mFragmentManager = parentFragmentManager
+        mFragmentManager.beginTransaction().apply {
+            replace(R.id.frameContainer, mDetailCategoryFragment, DetailCategoryFragment::class.java.simpleName)
+            addToBackStack(null)
+            commit()
+        }
     }
 }
