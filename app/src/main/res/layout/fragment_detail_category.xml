@@ -38,4 +38,14 @@
         android:text="@string/tvShowDialog"
         app:layout_constraintTop_toBottomOf="@id/btnProfile"/>
 
+    <TextView
+        android:id="@+id/tvChosenCoach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/btnShowDialog"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="@string/tvQuestionCoach"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

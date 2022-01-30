@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidFundamental">
         <activity
+            android:name=".activity.ProfileActivity"
+            android:exported="false" />
+        <activity
             android:name=".debug.DebugActivity"
             android:exported="false" />
         <activity
@@ -25,10 +28,10 @@
             android:name=".intent.MoveWithObjectActivity"
             android:exported="false" />
         <activity
-            android:name=".VolumeActivity"
+            android:name=".activity.VolumeActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".activity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

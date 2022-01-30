@@ -1,8 +1,9 @@
-package com.taufik.androidfundamental
+package com.taufik.androidfundamental.activity
 
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
+import com.taufik.androidfundamental.R
 import com.taufik.androidfundamental.databinding.ActivityMainBinding
 import com.taufik.androidfundamental.fragment.HomeFragment
 

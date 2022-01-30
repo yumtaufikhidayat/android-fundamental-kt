@@ -1,4 +1,4 @@
-package com.taufik.androidfundamental
+package com.taufik.androidfundamental.activity
 
 import android.os.Bundle
 import android.util.Log
