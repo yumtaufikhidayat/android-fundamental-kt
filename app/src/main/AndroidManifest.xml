@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidFundamental">
         <activity
+            android:name=".activity.MainActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.ProfileActivity"
             android:exported="false" />
         <activity
@@ -31,7 +34,7 @@
             android:name=".activity.VolumeActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.MainActivity"
+            android:name=".activity.ViewViewGroupActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

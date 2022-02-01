@@ -41,7 +41,31 @@
     <string name="actionMoveActivityWithObject">Pindah Activity Dengan Object</string>
     <string name="actionDialNumber">Dial A Number</string>
     <string name="actionMoveActivityForResult">Pindah Activity Untuk Result</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="tvSixPhotos">6 Photos</string>
+    <string name="contentImagePixel">Google Pixel</string>
+    <string name="contentText">Google officially announced its much-anticipated Pixel phones; the Pixel and Pixel XL, on October 4. We attended Google’s London UK event, mirroring the main one taking place in San Francisco, US, where the firm unwrapped the new Android 7.1 Nougat devices which will apparently usurp Google’s long-standing Nexus series.</string>
+    <string name="contentSpecsDisplay">5.0 inches\n
+    FHD AMOLED at 441ppi\n
+    2.5D Corning® Gorilla® Glass 4</string>
+    <string name="contentSpecsSize">5.6 x 2.7 x 0.2 ~ 0.3 inches 143.8 x 69.5 x 7.3 ~ 8.5 mm</string>
+    <string name="contentSpecsBattery">2,770 mAh battery\n
+    Standby time (LTE): up to 19 days\n
+    Talk time (3g/WCDMA): up to 26 hours\n
+    Internet use time (Wi-Fi): up to 13 hours\n
+    Internet use time (LTE): up to 13 hours\n
+    Video playback: up to 13 hours\n
+    Audio playback (via headset): up to 110 hours\n
+    Fast charging: up to 7 hours of use from only 15 minutes of charging</string>
+    <string name="stock">Stock hanya 5 buah</string>
+    <string name="specification">Spesifikasi</string>
+    <string name="display">Display</string>
+    <string name="size">Size</string>
+    <string name="battery">Battery</string>
+    <string name="seller">Dijual oleh</string>
+    <string name="myName">Narenda Wicaksono</string>
+    <string name="buy">Beli</string>
+    <string name="dummyValue">$735</string>
+    <string name="dummyPhotos">6 photos</string>
 
 </resources>
