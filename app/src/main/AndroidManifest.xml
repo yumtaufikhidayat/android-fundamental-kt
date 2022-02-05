@@ -13,6 +13,9 @@
             android:name=".activity.MainActivity"
             android:exported="false" />
         <activity
+            android:name=".activity.ViewViewGroupActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.ProfileActivity"
             android:exported="false" />
         <activity
@@ -34,7 +37,7 @@
             android:name=".activity.VolumeActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.ViewViewGroupActivity"
+            android:name=".activity.ConstraintLayoutActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
