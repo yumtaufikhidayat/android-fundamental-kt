@@ -13,4 +13,53 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="Theme.AndroidFundamental.MyViewAndViews">
+        <item name="colorPrimary">@color/gray</item>
+        <item name="colorPrimaryVariant">@color/gray_dark</item>
+        <item name="colorSecondary">@color/orange_light</item>
+        <item name="colorSecondaryVariant">@color/orange_dark</item>
+    </style>
+
+    <style name="TextContent">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+    </style>
+
+    <style name="TextContent.MatchParent">
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="TextContent.Small">
+        <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Subtitle1</item>
+    </style>
+
+    <style name="TextContent.Small.White">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="TextContent.MatchParent.Subtitle">
+        <item name="android:textColor">@color/colorSubtitle</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextSpec">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextSpec.Field">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:textColor">@color/colorSubtitle</item>
+    </style>
+
+    <style name="TextSpec.Value">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
 </resources>
