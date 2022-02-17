@@ -8,7 +8,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AndroidFundamental.MyViewAndViews">
+        android:theme="@style/Theme.AndroidFundamental">
+        <activity
+            android:name=".activity.StyleThemeActivity"
+            android:exported="false" />
         <activity
             android:name=".activity.ConstraintLayoutActivity"
             android:exported="false" />
@@ -40,7 +43,7 @@
             android:name=".activity.VolumeActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.StyleThemeActivity"
+            android:name=".activity.CustomButtonEditTextActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
