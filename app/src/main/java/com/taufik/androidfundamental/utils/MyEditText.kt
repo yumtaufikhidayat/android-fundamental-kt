@@ -14,7 +14,7 @@ import com.taufik.androidfundamental.R
 
 class MyEditText: AppCompatEditText, View.OnTouchListener {
 
-    internal lateinit var mClearButtonImage: Drawable
+    private lateinit var mClearButtonImage: Drawable
 
     constructor(context: Context) : super(context) {
         init()
