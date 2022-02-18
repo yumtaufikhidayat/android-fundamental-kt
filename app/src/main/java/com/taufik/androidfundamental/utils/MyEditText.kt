@@ -76,9 +76,9 @@ class MyEditText: AppCompatEditText, View.OnTouchListener {
                     when {
                         event!!.x > clearButtonStart -> isClearButtonClicked = true
                     }
-
                 }
             }
+
             when {
                 isClearButtonClicked -> when (event!!.action) {
                     MotionEvent.ACTION_DOWN -> {
