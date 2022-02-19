@@ -41,6 +41,8 @@
     <string name="actionMoveActivityWithObject">Pindah Activity Dengan Object</string>
     <string name="actionDialNumber">Dial A Number</string>
     <string name="actionMoveActivityForResult">Pindah Activity Untuk Result</string>
+    <string name="actionLinearLayout">Linear Layout</string>
+    <string name="actionGridLayout">Grid Layout</string>
 
     <string name="tvSixPhotos">6 Photos</string>
     <string name="contentImagePixel">Google Pixel</string>
