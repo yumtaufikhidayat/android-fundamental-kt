@@ -5,6 +5,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.taufik.androidfundamental.R
 import com.taufik.androidfundamental.data.Country
 import com.taufik.androidfundamental.databinding.ItemGridCountriesBinding
 
@@ -32,6 +33,7 @@ class GridCountryAdapter(private val listCountry: ArrayList<Country>)
             binding.apply {
                 Glide.with(itemView.context)
                     .load(country.countryFlag)
+                    .placeholder(R.color.purple_700)
                     .into(imgCountryFlag)
 
                 tvCountryName.text = country.countryName
