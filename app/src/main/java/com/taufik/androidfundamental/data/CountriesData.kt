@@ -18,7 +18,7 @@ object CountriesData {
     private val countyFlags = arrayOf(
         "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_Indonesia.svg/255px-Flag_of_Indonesia.svg.png",
         "https://asset.kompas.com/crops/Wd4Blwo5HQZ9941XQ3qz9xEwjlk=/0x0:250x167/750x500/data/photo/2020/02/19/5e4d1bd77a5a9.jpg",
-        "https://www.kibrispdr.org/dwn/0/gambar-bendera-merah-putih-dan-brunei.jpg",
+        "https://cdn.britannica.com/24/4024-004-246630D3/Flag-Brunei.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/250px-Flag_of_Vietnam.svg.png",
         "https://asset.kompas.com/crops/txVUgwjRJBYGDz5JUrwZs-Ep_8g=/0x0:250x125/780x390/data/photo/2020/02/19/5e4d1c91e29ec.jpg",
         "https://asset.kompas.com/crops/1vwByzVDAIDujFeQ8VH38-nMKRM=/0x0:250x166/375x240/data/photo/2020/02/19/5e4d1d104c870.jpg",
