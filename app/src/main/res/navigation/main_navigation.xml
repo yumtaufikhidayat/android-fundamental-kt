@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/mainNavigationComponentFragment">
+
+    <fragment
+        android:id="@+id/mainNavigationComponentFragment"
+        android:name="com.taufik.androidfundamental.fragment.MainNavigationComponentFragment"
+        android:label="fragment_main_navigation_component"
+        tools:layout="@layout/fragment_main_navigation_component" >
+        <action
+            android:id="@+id/action_mainNavigationComponentFragment_to_navCategoryFragment"
+            app:destination="@id/navCategoryFragment" />
+        <action
+            android:id="@+id/action_mainNavigationComponentFragment_to_profileActivity"
+            app:destination="@id/profileActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/navCategoryFragment"
+        android:name="com.taufik.androidfundamental.fragment.NavCategoryFragment"
+        android:label="fragment_nav_category"
+        tools:layout="@layout/fragment_nav_category" >
+        <action
+            android:id="@+id/action_navCategoryFragment_to_navDetailCategoryFragment"
+            app:destination="@id/navDetailCategoryFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/profileActivity"
+        android:name="com.taufik.androidfundamental.activity.ProfileActivity"
+        android:label="activity_profile"
+        tools:layout="@layout/activity_profile" />
+    <fragment
+        android:id="@+id/navDetailCategoryFragment"
+        android:name="com.taufik.androidfundamental.fragment.NavDetailCategoryFragment"
+        android:label="fragment_nav_detail_category"
+        tools:layout="@layout/fragment_nav_detail_category" >
+        <argument
+            android:name="name"
+            app:argType="string"
+            android:defaultValue="default_name" />
+        <argument
+            android:name="stocks"
+            app:argType="long"
+            android:defaultValue="0L" />
+    </fragment>
+</navigation>
