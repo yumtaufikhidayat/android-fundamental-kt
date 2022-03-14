@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<navigation
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_navigation"
@@ -10,7 +9,7 @@
         android:id="@+id/mainNavigationComponentFragment"
         android:name="com.taufik.androidfundamental.fragment.MainNavigationComponentFragment"
         android:label="fragment_main_navigation_component"
-        tools:layout="@layout/fragment_main_navigation_component" >
+        tools:layout="@layout/fragment_main_navigation_component">
         <action
             android:id="@+id/action_mainNavigationComponentFragment_to_navCategoryFragment"
             app:destination="@id/navCategoryFragment" />
@@ -31,19 +30,26 @@
         android:id="@+id/profileActivity"
         android:name="com.taufik.androidfundamental.activity.ProfileActivity"
         android:label="activity_profile"
-        tools:layout="@layout/activity_profile" />
+        tools:layout="@layout/activity_profile">
+        <deepLink
+            android:id="@+id/deepLink2"
+            app:uri="https://www.dicoding.com/profile" />
+    </activity>
     <fragment
         android:id="@+id/navDetailCategoryFragment"
         android:name="com.taufik.androidfundamental.fragment.NavDetailCategoryFragment"
         android:label="fragment_nav_detail_category"
-        tools:layout="@layout/fragment_nav_detail_category" >
+        tools:layout="@layout/fragment_nav_detail_category">
         <argument
             android:name="name"
-            app:argType="string"
-            android:defaultValue="default_name" />
+            android:defaultValue="default_name"
+            app:argType="string" />
         <argument
             android:name="stocks"
-            app:argType="long"
-            android:defaultValue="0L" />
+            android:defaultValue="0L"
+            app:argType="long" />
+        <deepLink
+            android:id="@+id/deepLink"
+            app:uri="https://www.dicoding.com/detail/{name}" />
     </fragment>
 </navigation>
