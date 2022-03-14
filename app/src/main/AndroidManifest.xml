@@ -52,6 +52,7 @@
             android:exported="false" />
         <activity
             android:name=".activity.MainNavHostActivity"
+            android:theme="@style/Theme.AndroidFundamental"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

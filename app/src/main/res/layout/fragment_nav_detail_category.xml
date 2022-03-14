@@ -5,20 +5,40 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
     tools:context=".fragment.NavDetailCategoryFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarDetail"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        app:navigationIcon="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/detail_category"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+    </androidx.appcompat.widget.Toolbar>
 
     <TextView
         android:id="@+id/tvDetailCategory"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/category_name"
-        app:layout_constraintTop_toTopOf="parent"/>
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbarDetail"/>
 
     <TextView
         android:id="@+id/tvCategoryDescription"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
         android:text="@string/category_description"
         app:layout_constraintTop_toBottomOf="@id/tvDetailCategory"/>
 
@@ -27,6 +47,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="16dp"
         android:text="@string/to_home"
         app:layout_constraintTop_toBottomOf="@id/tvCategoryDescription"/>
 

@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
+import androidx.navigation.findNavController
 import com.taufik.androidfundamental.R
 import com.taufik.androidfundamental.databinding.FragmentNavDetailCategoryBinding
 
@@ -41,6 +42,12 @@ class NavDetailCategoryFragment : Fragment() {
 
     private fun setAction() {
         binding.apply {
+            toolbarDetail.setOnClickListener {
+                it.findNavController().navigate(
+                    R.id.action_navDetailCategoryFragment_to_mainNavigationComponentFragment
+                )
+            }
+
             btnProfile.setOnClickListener (
                 Navigation.createNavigateOnClickListener(
                     R.id.action_navDetailCategoryFragment_to_mainNavigationComponentFragment
