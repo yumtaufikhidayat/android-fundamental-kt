@@ -12,10 +12,14 @@
         tools:layout="@layout/fragment_main_navigation_component">
         <action
             android:id="@+id/action_mainNavigationComponentFragment_to_navCategoryFragment"
-            app:destination="@id/navCategoryFragment" />
+            app:destination="@id/navCategoryFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
         <action
             android:id="@+id/action_mainNavigationComponentFragment_to_profileActivity"
-            app:destination="@id/profileActivity" />
+            app:destination="@id/profileActivity"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
     </fragment>
     <fragment
         android:id="@+id/navCategoryFragment"
@@ -24,7 +28,9 @@
         tools:layout="@layout/fragment_nav_category" >
         <action
             android:id="@+id/action_navCategoryFragment_to_navDetailCategoryFragment"
-            app:destination="@id/navDetailCategoryFragment" />
+            app:destination="@id/navDetailCategoryFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
     </fragment>
     <activity
         android:id="@+id/profileActivity"
@@ -54,6 +60,10 @@
         <action
             android:id="@+id/action_navDetailCategoryFragment_to_mainNavigationComponentFragment"
             app:destination="@id/mainNavigationComponentFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
             app:popUpTo="@id/mainNavigationComponentFragment"
             app:popUpToInclusive="true" />
     </fragment>
