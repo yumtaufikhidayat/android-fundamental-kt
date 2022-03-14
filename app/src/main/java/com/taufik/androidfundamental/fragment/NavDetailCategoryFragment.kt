@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.Navigation
 import com.taufik.androidfundamental.R
 import com.taufik.androidfundamental.databinding.FragmentNavDetailCategoryBinding
 
@@ -25,6 +26,7 @@ class NavDetailCategoryFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setBundleData()
+        setAction()
     }
 
     private fun setBundleData() {
@@ -34,6 +36,16 @@ class NavDetailCategoryFragment : Fragment() {
         binding.apply {
             tvDetailCategory.text = dataName
             tvCategoryDescription.text = String.format("%s: %s", getString(R.string.tvStock), description)
+        }
+    }
+
+    private fun setAction() {
+        binding.apply {
+            btnProfile.setOnClickListener (
+                Navigation.createNavigateOnClickListener(
+                    R.id.action_navDetailCategoryFragment_to_mainNavigationComponentFragment
+                )
+            )
         }
     }
 

@@ -22,4 +22,12 @@
         android:text="@string/category_description"
         app:layout_constraintTop_toBottomOf="@id/tvDetailCategory"/>
 
+    <Button
+        android:id="@+id/btnProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/to_home"
+        app:layout_constraintTop_toBottomOf="@id/tvCategoryDescription"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -51,5 +51,8 @@
         <deepLink
             android:id="@+id/deepLink"
             app:uri="https://www.dicoding.com/detail/{name}" />
+        <action
+            android:id="@+id/action_navDetailCategoryFragment_to_mainNavigationComponentFragment"
+            app:destination="@id/mainNavigationComponentFragment" />
     </fragment>
 </navigation>
