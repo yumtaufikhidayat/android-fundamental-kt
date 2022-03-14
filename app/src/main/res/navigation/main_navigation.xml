@@ -53,6 +53,8 @@
             app:uri="https://www.dicoding.com/detail/{name}" />
         <action
             android:id="@+id/action_navDetailCategoryFragment_to_mainNavigationComponentFragment"
-            app:destination="@id/mainNavigationComponentFragment" />
+            app:destination="@id/mainNavigationComponentFragment"
+            app:popUpTo="@id/mainNavigationComponentFragment"
+            app:popUpToInclusive="true" />
     </fragment>
 </navigation>
