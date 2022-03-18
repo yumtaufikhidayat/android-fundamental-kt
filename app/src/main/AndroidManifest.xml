@@ -12,7 +12,10 @@
     android:supportsRtl="true"
     android:theme="@style/Theme.AndroidFundamental">
     <activity
-        android:name=".activity.OptionMenuActivity"
+        android:name=".activity.MenuActivity"
+        android:exported="false" />
+    <activity
+        android:name=".activity.MainNavHostActivity"
         android:exported="false" />
     <activity
         android:name=".activity.RecyclerViewActivity"
@@ -54,7 +57,7 @@
         android:name=".activity.VolumeActivity"
         android:exported="false" />
     <activity
-        android:name=".activity.MainNavHostActivity"
+        android:name=".activity.OptionMenuActivity"
         android:theme="@style/Theme.AndroidFundamental"
         android:exported="true">
         <intent-filter>
