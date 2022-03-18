@@ -4,63 +4,66 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
-    <application
-        android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/Theme.AndroidFundamental">
-        <activity
-            android:name=".activity.RecyclerViewActivity"
-            android:exported="false" />
-        <activity
-            android:name=".activity.CustomButtonEditTextActivity"
-            android:exported="false" />
-        <activity
-            android:name=".activity.StyleThemeActivity"
-            android:exported="false" />
-        <activity
-            android:name=".activity.ConstraintLayoutActivity"
-            android:exported="false" />
-        <activity
-            android:name=".activity.MainActivity"
-            android:exported="false" />
-        <activity
-            android:name=".activity.ViewViewGroupActivity"
-            android:exported="false" />
-        <activity
-            android:name=".activity.ProfileActivity"
-            android:exported="false" />
-        <activity
-            android:name=".debug.DebugActivity"
-            android:exported="false" />
-        <activity
-            android:name=".intent.MoveForResultActivity"
-            android:exported="false" />
-        <activity
-            android:name=".intent.MoveActivity"
-            android:exported="false" />
-        <activity
-            android:name=".intent.MoveWithDataActivity"
-            android:exported="false" />
-        <activity
-            android:name=".intent.MoveWithObjectActivity"
-            android:exported="false" />
-        <activity
-            android:name=".activity.VolumeActivity"
-            android:exported="false" />
-        <activity
-            android:name=".activity.MainNavHostActivity"
-            android:theme="@style/Theme.AndroidFundamental"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+<application
+    android:allowBackup="true"
+    android:icon="@mipmap/ic_launcher"
+    android:label="@string/app_name"
+    android:roundIcon="@mipmap/ic_launcher_round"
+    android:supportsRtl="true"
+    android:theme="@style/Theme.AndroidFundamental">
+    <activity
+        android:name=".activity.OptionMenuActivity"
+        android:exported="false" />
+    <activity
+        android:name=".activity.RecyclerViewActivity"
+        android:exported="false" />
+    <activity
+        android:name=".activity.CustomButtonEditTextActivity"
+        android:exported="false" />
+    <activity
+        android:name=".activity.StyleThemeActivity"
+        android:exported="false" />
+    <activity
+        android:name=".activity.ConstraintLayoutActivity"
+        android:exported="false" />
+    <activity
+        android:name=".activity.MainActivity"
+        android:exported="false" />
+    <activity
+        android:name=".activity.ViewViewGroupActivity"
+        android:exported="false" />
+    <activity
+        android:name=".activity.ProfileActivity"
+        android:exported="false" />
+    <activity
+        android:name=".debug.DebugActivity"
+        android:exported="false" />
+    <activity
+        android:name=".intent.MoveForResultActivity"
+        android:exported="false" />
+    <activity
+        android:name=".intent.MoveActivity"
+        android:exported="false" />
+    <activity
+        android:name=".intent.MoveWithDataActivity"
+        android:exported="false" />
+    <activity
+        android:name=".intent.MoveWithObjectActivity"
+        android:exported="false" />
+    <activity
+        android:name=".activity.VolumeActivity"
+        android:exported="false" />
+    <activity
+        android:name=".activity.MainNavHostActivity"
+        android:theme="@style/Theme.AndroidFundamental"
+        android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-            <nav-graph android:value="@navigation/main_navigation"/>
-        </activity>
-    </application>
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        <nav-graph android:value="@navigation/main_navigation" />
+    </activity>
+</application>
 
 </manifest>

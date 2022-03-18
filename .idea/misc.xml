@@ -6,6 +6,7 @@
         <entry key="../../../../../../layout/custom_preview.xml" value="0.2851851851851852" />
         <entry key="app/src/main/res/drawable/bg_button.xml" value="0.1345" />
         <entry key="app/src/main/res/drawable/bg_button_disable.xml" value="0.1345" />
+        <entry key="app/src/main/res/drawable/ic_announcement.xml" value="0.158" />
         <entry key="app/src/main/res/drawable/ic_grid.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_list.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_constraint_layout.xml" value="0.25" />
@@ -18,6 +19,7 @@
         <entry key="app/src/main/res/layout/activity_move_for_result.xml" value="0.2703125" />
         <entry key="app/src/main/res/layout/activity_move_with_data.xml" value="0.2703125" />
         <entry key="app/src/main/res/layout/activity_move_with_object.xml" value="0.2703125" />
+        <entry key="app/src/main/res/layout/activity_option_menu.xml" value="0.17533783783783785" />
         <entry key="app/src/main/res/layout/activity_profile.xml" value="0.2703125" />
         <entry key="app/src/main/res/layout/activity_recycler_view.xml" value="0.17357859531772576" />
         <entry key="app/src/main/res/layout/activity_style_theme.xml" value="0.18333333333333332" />
@@ -32,6 +34,7 @@
         <entry key="app/src/main/res/layout/fragment_option_dialog.xml" value="0.2703125" />
         <entry key="app/src/main/res/layout/item_grid_countries.xml" value="0.17533783783783785" />
         <entry key="app/src/main/res/layout/item_list_countries.xml" value="0.17357859531772576" />
+        <entry key="app/src/main/res/menu/option_menu.xml" value="0.17533783783783785" />
       </map>
     </option>
   </component>
