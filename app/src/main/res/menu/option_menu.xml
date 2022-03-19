@@ -3,6 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <group android:menuCategory="container">
         <item
+            android:id="@+id/action_search"
+            android:title="@string/search"
+            android:icon = "@drawable/ic_search"
+            app:actionViewClass="androidx.appcompat.widget.SearchView"
+            app:showAsAction="collapseActionView|ifRoom" />
+        <item
             android:id="@+id/menu1"
             android:title="@string/menu_1"
             android:icon = "@drawable/ic_announcement"
