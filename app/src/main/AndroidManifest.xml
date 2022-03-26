@@ -12,11 +12,14 @@
     android:supportsRtl="true"
     android:theme="@style/Theme.AndroidFundamental">
     <activity
+        android:name=".activity.NavigationDrawerActivity"
+        android:exported="false" />
+    <activity
         android:name=".activity.SubwayActivity"
         android:exported="false" />
     <activity
         android:name=".activity.OptionMenuActivity"
-        android:exported="false"/>
+        android:exported="false" />
     <activity
         android:name=".activity.MenuActivity"
         android:exported="false" />
@@ -63,8 +66,8 @@
         android:name=".activity.VolumeActivity"
         android:exported="false" />
     <activity
-        android:name=".activity.NavigationDrawerActivity"
-        android:theme="@style/Theme.AndroidFundamental.WithActionBar"
+        android:name=".activity.BottomNavigationViewActivity"
+        android:theme="@style/Theme.AndroidFundamental"
         android:exported="true">
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />

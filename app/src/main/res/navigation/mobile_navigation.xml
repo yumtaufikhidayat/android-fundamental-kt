@@ -7,9 +7,9 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.taufik.androidfundamental.activity.ui.home.Home2Fragment"
+        android:name="com.taufik.androidfundamental.activity.ui.home.HomeNavigationDrawerFragment"
         android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home2" />
+        tools:layout="@layout/fragment_home_navigation_drawer" />
 
     <fragment
         android:id="@+id/nav_gallery"
