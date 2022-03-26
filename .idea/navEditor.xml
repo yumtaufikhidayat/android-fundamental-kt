@@ -128,13 +128,13 @@
                       </LayoutPositions>
                     </value>
                   </entry>
-                  <entry key="subwayActivity">
+                  <entry key="nav_subway">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="236" />
-                            <option name="y" value="368" />
+                            <option name="x" value="12" />
+                            <option name="y" value="12" />
                           </Point>
                         </option>
                       </LayoutPositions>

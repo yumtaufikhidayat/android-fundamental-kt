@@ -1,6 +1,7 @@
 package com.taufik.androidfundamental.activity
 import android.os.Bundle
 import android.view.Menu
+import android.widget.Toast
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.navigation.NavigationView
 import androidx.navigation.findNavController
@@ -37,7 +38,10 @@ class NavigationDrawerActivity : AppCompatActivity() {
 
             appBarNavigationDrawer.fab.setOnClickListener { view ->
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                    .setAction("Action", null).show()
+                    .setAction("Klik") {
+                        Toast.makeText(this@NavigationDrawerActivity, "Halo ini action dari snackbar", Toast.LENGTH_SHORT).show()
+                    }
+                    .show()
             }
 
             val drawerLayout: DrawerLayout = drawerLayout
