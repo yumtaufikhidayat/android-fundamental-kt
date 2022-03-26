@@ -12,6 +12,9 @@
     android:supportsRtl="true"
     android:theme="@style/Theme.AndroidFundamental">
     <activity
+        android:name=".activity.SubwayActivity"
+        android:exported="false" />
+    <activity
         android:name=".activity.OptionMenuActivity"
         android:exported="false"/>
     <activity

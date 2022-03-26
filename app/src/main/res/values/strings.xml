@@ -98,13 +98,14 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
     <string name="cart_fragment">This is cart fragment</string>
+    <string name="subway_activity">This is subway activity</string>
+
+    <string name="narenda_wicaksono">Narenda Wicaksono</string>
+    <string name="narenda_dicoding_com">narenda@dicoding.com</string>
 
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
-
-    <string name="narenda_wicaksono">Narenda Wicaksono</string>
-    <string name="narenda_dicoding_com">narenda@dicoding.com</string>
     <string name="menu_cart">Cart</string>
     <string name="menu_map">Maps</string>
     <string name="menu_hotel">Hotel</string>

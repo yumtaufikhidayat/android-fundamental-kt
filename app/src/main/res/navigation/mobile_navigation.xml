@@ -28,4 +28,11 @@
         android:name="com.taufik.androidfundamental.fragment.CartFragment"
         android:label="@string/menu_cart"
         tools:layout="@layout/fragment_cart" />
+
+    <activity
+        android:id="@+id/nav_subway"
+        android:name="com.taufik.androidfundamental.activity.SubwayActivity"
+        android:label="@string/menu_subway"
+        tools:layout="@layout/activity_subway" />
+
 </navigation>
