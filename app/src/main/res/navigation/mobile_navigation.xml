@@ -9,7 +9,7 @@
         android:id="@+id/nav_home"
         android:name="com.taufik.androidfundamental.activity.ui.home.Home2Fragment"
         android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home1" />
+        tools:layout="@layout/fragment_home2" />
 
     <fragment
         android:id="@+id/nav_gallery"
@@ -22,4 +22,10 @@
         android:name="com.taufik.androidfundamental.activity.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_cart"
+        android:name="com.taufik.androidfundamental.fragment.CartFragment"
+        android:label="@string/menu_cart"
+        tools:layout="@layout/fragment_cart" />
 </navigation>
