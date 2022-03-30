@@ -12,6 +12,9 @@
     android:supportsRtl="true"
     android:theme="@style/Theme.AndroidFundamental">
     <activity
+        android:name=".activity.BottomNavigationViewActivity"
+        android:exported="false" />
+    <activity
         android:name=".activity.NavigationDrawerActivity"
         android:exported="false" />
     <activity
@@ -66,7 +69,7 @@
         android:name=".activity.VolumeActivity"
         android:exported="false" />
     <activity
-        android:name=".activity.BottomNavigationViewActivity"
+        android:name=".activity.TabLayoutActivity"
         android:theme="@style/Theme.AndroidFundamental"
         android:exported="true">
         <intent-filter>
