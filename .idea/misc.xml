@@ -12,6 +12,7 @@
         <entry key="app/src/main/res/drawable/ic_menu_slideshow.xml" value="0.1055" />
         <entry key="app/src/main/res/drawable/ic_search.xml" value="0.158" />
         <entry key="app/src/main/res/drawable/side_nav_bar.xml" value="0.1055" />
+        <entry key="app/src/main/res/layout/activity_background_thread.xml" value="0.11597222222222223" />
         <entry key="app/src/main/res/layout/activity_bottom_navigation_view.xml" value="0.17533783783783785" />
         <entry key="app/src/main/res/layout/activity_constraint_layout.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_custom_button_edit_text.xml" value="0.165" />
