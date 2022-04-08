@@ -12,6 +12,9 @@
     android:supportsRtl="true"
     android:theme="@style/Theme.AndroidFundamental">
     <activity
+        android:name=".activity.CoroutineActivity"
+        android:exported="false" />
+    <activity
         android:name=".activity.BackgroundThreadActivity"
         android:exported="false" />
     <activity
@@ -75,7 +78,7 @@
         android:name=".activity.VolumeActivity"
         android:exported="false" />
     <activity
-        android:name=".activity.CoroutineActivity"
+        android:name=".activity.LoopJActivity"
         android:theme="@style/Theme.AndroidFundamental"
         android:exported="true">
         <intent-filter>
