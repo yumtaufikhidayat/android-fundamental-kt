@@ -130,4 +130,15 @@
     <string name="task_completed">Task Completed</string>
     <string name="compressing">Compresssing %d %%</string>
 
+    <string name="quote">When do you think people die? When they are shot through the heart by the bullet of a pistol? No. When they are ravaged by an incurable disease? No. When they drink a soup made from a poisonous mushroom!? No! It’s when… they are FORGOTTEN.</string>
+    <string name="author">- Dr. Hiluluk</string>
+    <string name="show_list_quotes">Show me list of quotes</string>
+
+    <string name="error400">Bad Request</string>
+    <string name="error401">Unauthorized</string>
+    <string name="error403">Forbidden</string>
+    <string name="error404">Not Found</string>
+    <string name="error500">Server Error</string>
+
+
 </resources>

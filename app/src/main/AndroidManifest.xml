@@ -12,6 +12,9 @@
     android:supportsRtl="true"
     android:theme="@style/Theme.AndroidFundamental">
     <activity
+        android:name=".activity.ListQuoteLoopJActivity"
+        android:exported="false" />
+    <activity
         android:name=".activity.CoroutineActivity"
         android:exported="false" />
     <activity
