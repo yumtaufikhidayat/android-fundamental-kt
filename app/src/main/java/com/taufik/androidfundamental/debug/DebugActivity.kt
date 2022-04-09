@@ -8,7 +8,6 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.taufik.androidfundamental.R
-import java.lang.StringBuilder
 
 class DebugActivity : AppCompatActivity(), View.OnClickListener {
 
