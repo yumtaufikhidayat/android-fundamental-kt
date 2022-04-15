@@ -140,5 +140,9 @@
     <string name="error404">Not Found</string>
     <string name="error500">Server Error</string>
 
-
+    <string name="title">Judul</string>
+    <string name="description">Description</string>
+    <string name="review">Review</string>
+    <string name="write_your_review_here">Write your review here..</string>
+    <string name="send">Kirim</string>
 </resources>
