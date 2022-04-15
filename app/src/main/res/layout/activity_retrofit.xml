@@ -62,7 +62,6 @@
         app:layout_constraintStart_toStartOf="@id/imgPicture"
         app:layout_constraintEnd_toEndOf="@id/imgPicture"/>
 
-
     <ProgressBar
         android:id="@+id/progressBar"
         style="?android:attr/progressBarStyle"
@@ -112,6 +111,7 @@
         android:layout_marginHorizontal="16dp"
         android:overScrollMode="never"
         android:scrollbarSize="0dp"
+        tools:listitem="@layout/item_review"
         app:layout_constraintTop_toBottomOf="@id/btnSend"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@id/imgPicture"
