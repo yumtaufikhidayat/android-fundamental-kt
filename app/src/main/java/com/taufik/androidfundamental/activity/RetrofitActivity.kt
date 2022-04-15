@@ -1,8 +1,10 @@
 package com.taufik.androidfundamental.activity
 
+import android.content.Context
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.view.inputmethod.InputMethodManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -10,6 +12,7 @@ import com.bumptech.glide.Glide
 import com.taufik.androidfundamental.adapter.ReviewAdapter
 import com.taufik.androidfundamental.data.api.ApiConfig
 import com.taufik.androidfundamental.data.response.CustomerReviewsItem
+import com.taufik.androidfundamental.data.response.PostReviewResponse
 import com.taufik.androidfundamental.data.response.Restaurant
 import com.taufik.androidfundamental.data.response.RestaurantResponse
 import com.taufik.androidfundamental.databinding.ActivityRetrofitBinding
@@ -21,6 +24,7 @@ class RetrofitActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityRetrofitBinding
     private lateinit var reviewAdapter: ReviewAdapter
+    private val client = ApiConfig.getApiService()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,6 +34,7 @@ class RetrofitActivity : AppCompatActivity() {
         supportActionBar?.hide()
         setRecyclerView()
         findRestaurant()
+        setAction()
     }
 
     private fun setRecyclerView() {
@@ -46,8 +51,8 @@ class RetrofitActivity : AppCompatActivity() {
 
     private fun findRestaurant() {
         showLoading(true)
-        val client = ApiConfig.getApiService().getRestaurant(RESTAURANT_ID)
-        client.enqueue(object : Callback<RestaurantResponse> {
+        client.getRestaurant(RESTAURANT_ID)
+            .enqueue(object : Callback<RestaurantResponse> {
             override fun onResponse(
                 call: Call<RestaurantResponse>,
                 response: Response<RestaurantResponse>
@@ -92,6 +97,38 @@ class RetrofitActivity : AppCompatActivity() {
 
         reviewAdapter.setReviews(listReview)
         etReview.setText("")
+    }
+
+    private fun setAction() = with(binding){
+        btnSend.setOnClickListener {
+            postReview(etReview.text.toString())
+            val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+            imm.hideSoftInputFromWindow(it.windowToken, 0)
+        }
+    }
+
+    private fun postReview(review: String) {
+        showLoading(true)
+        client.postReview(RESTAURANT_ID, "Dicoding", review)
+            .enqueue(object : Callback<PostReviewResponse> {
+                override fun onResponse(
+                    call: Call<PostReviewResponse>,
+                    response: Response<PostReviewResponse>
+                ) {
+                    showLoading(false)
+                    val responseBody = response.body()
+                    if (response.isSuccessful && responseBody != null) {
+                        setReviewData(responseBody.customerReviews)
+                    } else {
+                        Log.e(TAG, "onResponse: ${response.message()}")
+                    }
+                }
+
+                override fun onFailure(call: Call<PostReviewResponse>, t: Throwable) {
+                    showLoading(false)
+                    Log.e(TAG, "onFailure: ${t.message}")
+                }
+            })
     }
 
     private fun showLoading(isShow: Boolean) = with(binding) {
