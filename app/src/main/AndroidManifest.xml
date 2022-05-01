@@ -12,6 +12,9 @@
     android:supportsRtl="true"
     android:theme="@style/Theme.AndroidFundamental">
     <activity
+        android:name=".activity.RetrofitActivity"
+        android:exported="false" />
+    <activity
         android:name=".activity.LoopJActivity"
         android:exported="false" />
     <activity
@@ -84,7 +87,7 @@
         android:name=".activity.VolumeActivity"
         android:exported="false" />
     <activity
-        android:name=".activity.RetrofitActivity"
+        android:name=".activity.ViewModelActivity"
         android:theme="@style/Theme.AndroidFundamental"
         android:exported="true">
         <intent-filter>
