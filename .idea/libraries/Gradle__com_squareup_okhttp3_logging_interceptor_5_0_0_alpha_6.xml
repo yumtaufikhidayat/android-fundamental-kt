@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.6">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/logging-interceptor/5.0.0-alpha.6/ff5bfa54422990d78434009866eda71005d8c9bd/logging-interceptor-5.0.0-alpha.6.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/logging-interceptor/5.0.0-alpha.6/beac6a1fff42b7f711672db473e67441c308706c/logging-interceptor-5.0.0-alpha.6-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/logging-interceptor/5.0.0-alpha.6/684343c62354b9030c492e82ff07703459507fb/logging-interceptor-5.0.0-alpha.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
