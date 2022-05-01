@@ -145,4 +145,10 @@
     <string name="review">Review</string>
     <string name="write_your_review_here">Write your review here..</string>
     <string name="send">Kirim</string>
+
+    <string name="width">Lebar</string>
+    <string name="result">Hasil</string>
+    <string name="calculate">Hitung</string>
+    <string name="height">Tinggi</string>
+    <string name="length">Panjang</string>
 </resources>

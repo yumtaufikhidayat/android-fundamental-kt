@@ -5,6 +5,78 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="16dp"
     tools:context=".activity.ViewModelActivity">
+
+  <TextView
+      android:id="@+id/tvLengthTitle"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/length"
+      app:layout_constraintTop_toTopOf="parent"/>
+
+  <EditText
+      android:id="@+id/etLength"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="16dp"
+      android:inputType="numberDecimal"
+      android:lines="1"
+      android:autofillHints="Panjang"
+      app:layout_constraintTop_toBottomOf="@id/tvLengthTitle"
+      tools:ignore="LabelFor" />
+
+  <TextView
+      android:id="@+id/tvWidthTitle"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/width"
+      app:layout_constraintTop_toBottomOf="@id/etLength"/>
+
+  <EditText
+      android:id="@+id/etWidth"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="16dp"
+      android:inputType="numberDecimal"
+      android:lines="1"
+      android:autofillHints="Lebar"
+      app:layout_constraintTop_toBottomOf="@id/tvWidthTitle"
+      tools:ignore="LabelFor" />
+
+  <TextView
+      android:id="@+id/tvHeightTitle"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/height"
+      app:layout_constraintTop_toBottomOf="@id/etWidth"/>
+
+  <EditText
+      android:id="@+id/etHeight"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="16dp"
+      android:inputType="numberDecimal"
+      android:lines="1"
+      android:autofillHints="Tinggi"
+      app:layout_constraintTop_toBottomOf="@id/tvHeightTitle"
+      tools:ignore="LabelFor"/>
+
+  <Button
+      android:id="@+id/btnCalculate"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/calculate"
+      app:layout_constraintTop_toBottomOf="@id/etHeight"/>
+
+  <TextView
+      android:id="@+id/tvResult"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:text="@string/result"
+      android:textSize="24sp"
+      android:textStyle="bold"
+      app:layout_constraintTop_toBottomOf="@id/btnCalculate"/>
 
   </androidx.constraintlayout.widget.ConstraintLayout>
