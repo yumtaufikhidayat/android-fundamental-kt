@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -8,75 +8,81 @@
     android:padding="16dp"
     tools:context=".activity.ViewModelActivity">
 
-  <TextView
-      android:id="@+id/tvLengthTitle"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:text="@string/length"
-      app:layout_constraintTop_toTopOf="parent"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
 
-  <EditText
-      android:id="@+id/etLength"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_marginBottom="16dp"
-      android:inputType="numberDecimal"
-      android:lines="1"
-      android:autofillHints="Panjang"
-      app:layout_constraintTop_toBottomOf="@id/tvLengthTitle"
-      tools:ignore="LabelFor" />
+      <TextView
+          android:id="@+id/tvLengthTitle"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/length"
+          app:layout_constraintTop_toTopOf="parent"/>
 
-  <TextView
-      android:id="@+id/tvWidthTitle"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:text="@string/width"
-      app:layout_constraintTop_toBottomOf="@id/etLength"/>
+      <EditText
+          android:id="@+id/etLength"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="16dp"
+          android:inputType="numberDecimal"
+          android:lines="1"
+          android:autofillHints="Panjang"
+          app:layout_constraintTop_toBottomOf="@id/tvLengthTitle"
+          tools:ignore="LabelFor" />
 
-  <EditText
-      android:id="@+id/etWidth"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_marginBottom="16dp"
-      android:inputType="numberDecimal"
-      android:lines="1"
-      android:autofillHints="Lebar"
-      app:layout_constraintTop_toBottomOf="@id/tvWidthTitle"
-      tools:ignore="LabelFor" />
+      <TextView
+          android:id="@+id/tvWidthTitle"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/width"
+          app:layout_constraintTop_toBottomOf="@id/etLength"/>
 
-  <TextView
-      android:id="@+id/tvHeightTitle"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:text="@string/height"
-      app:layout_constraintTop_toBottomOf="@id/etWidth"/>
+      <EditText
+          android:id="@+id/etWidth"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="16dp"
+          android:inputType="numberDecimal"
+          android:lines="1"
+          android:autofillHints="Lebar"
+          app:layout_constraintTop_toBottomOf="@id/tvWidthTitle"
+          tools:ignore="LabelFor" />
 
-  <EditText
-      android:id="@+id/etHeight"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_marginBottom="16dp"
-      android:inputType="numberDecimal"
-      android:lines="1"
-      android:autofillHints="Tinggi"
-      app:layout_constraintTop_toBottomOf="@id/tvHeightTitle"
-      tools:ignore="LabelFor"/>
+      <TextView
+          android:id="@+id/tvHeightTitle"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/height"
+          app:layout_constraintTop_toBottomOf="@id/etWidth"/>
 
-  <Button
-      android:id="@+id/btnCalculate"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:text="@string/calculate"
-      app:layout_constraintTop_toBottomOf="@id/etHeight"/>
+      <EditText
+          android:id="@+id/etHeight"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="16dp"
+          android:inputType="numberDecimal"
+          android:lines="1"
+          android:autofillHints="Tinggi"
+          app:layout_constraintTop_toBottomOf="@id/tvHeightTitle"
+          tools:ignore="LabelFor"/>
 
-  <TextView
-      android:id="@+id/tvResult"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:gravity="center"
-      android:text="@string/result"
-      android:textSize="24sp"
-      android:textStyle="bold"
-      app:layout_constraintTop_toBottomOf="@id/btnCalculate"/>
+      <Button
+          android:id="@+id/btnCalculate"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/calculate"
+          app:layout_constraintTop_toBottomOf="@id/etHeight"/>
 
-  </androidx.constraintlayout.widget.ConstraintLayout>
+      <TextView
+          android:id="@+id/tvResult"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:text="@string/result"
+          android:textSize="24sp"
+          android:textStyle="bold"
+          app:layout_constraintTop_toBottomOf="@id/btnCalculate"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
