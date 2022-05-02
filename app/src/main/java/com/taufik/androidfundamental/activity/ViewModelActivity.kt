@@ -16,8 +16,8 @@ class ViewModelActivity : AppCompatActivity() {
         binding = ActivityViewModelBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        setAction()
         displayResult()
+        setAction()
     }
 
     private fun setAction() = with(binding){
