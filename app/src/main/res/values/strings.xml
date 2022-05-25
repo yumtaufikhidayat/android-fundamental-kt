@@ -151,4 +151,7 @@
     <string name="calculate">Hitung</string>
     <string name="height">Tinggi</string>
     <string name="length">Panjang</string>
+
+    <string name="tvSeconds">%d seconds elapsed</string>
+    <string name="tvHelloDicoding">Hello Dicoding!</string>
 </resources>
