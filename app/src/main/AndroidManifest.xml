@@ -12,6 +12,9 @@
     android:supportsRtl="true"
     android:theme="@style/Theme.AndroidFundamental">
     <activity
+        android:name=".activity.ViewModelActivity"
+        android:exported="false" />
+    <activity
         android:name=".activity.RetrofitActivity"
         android:exported="false" />
     <activity
@@ -87,7 +90,7 @@
         android:name=".activity.VolumeActivity"
         android:exported="false" />
     <activity
-        android:name=".activity.ViewModelActivity"
+        android:name=".activity.LiveDataActivity"
         android:theme="@style/Theme.AndroidFundamental"
         android:exported="true">
         <intent-filter>
