@@ -15,7 +15,7 @@
         android:name=".activity.ViewModelActivity"
         android:exported="false" />
     <activity
-        android:name=".activity.RetrofitActivity"
+        android:name=".activity.LiveDataActivity"
         android:exported="false" />
     <activity
         android:name=".activity.LoopJActivity"
@@ -90,7 +90,7 @@
         android:name=".activity.VolumeActivity"
         android:exported="false" />
     <activity
-        android:name=".activity.LiveDataActivity"
+        android:name=".activity.RetrofitActivity"
         android:theme="@style/Theme.AndroidFundamental"
         android:exported="true">
         <intent-filter>
