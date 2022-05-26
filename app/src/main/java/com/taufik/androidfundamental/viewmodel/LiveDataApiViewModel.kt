@@ -24,6 +24,9 @@ class LiveDataApiViewModel : ViewModel() {
     private val _isLoading = MutableLiveData<Boolean>()
     val isLoading: LiveData<Boolean> = _isLoading
 
+    private val _snackBarText = MutableLiveData<String>()
+    val snackBarText: LiveData<String> = _snackBarText
+
     private val client = ApiConfig.getApiService()
 
     init {
@@ -69,6 +72,7 @@ class LiveDataApiViewModel : ViewModel() {
                     val responseBody = response.body()
                     if (response.isSuccessful && responseBody != null) {
                         _listReview.value = responseBody.customerReviews
+                        _snackBarText.value = responseBody.message
                     } else {
                         Log.e(TAG, "onResponse: ${response.message()}")
                     }

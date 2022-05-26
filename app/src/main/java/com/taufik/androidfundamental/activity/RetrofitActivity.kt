@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
+import com.google.android.material.snackbar.Snackbar
 import com.taufik.androidfundamental.adapter.ReviewAdapter
 import com.taufik.androidfundamental.data.response.CustomerReviewsItem
 import com.taufik.androidfundamental.data.response.Restaurant
@@ -44,6 +45,14 @@ class RetrofitActivity : AppCompatActivity() {
 
         viewModel.isLoading.observe(this) {
             showLoading(it)
+        }
+
+        viewModel.snackBarText.observe(this) {
+            Snackbar.make(
+                window.decorView.rootView,
+                it,
+                Snackbar.LENGTH_SHORT
+            ).show()
         }
     }
 
