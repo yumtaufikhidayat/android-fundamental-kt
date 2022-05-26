@@ -21,7 +21,7 @@ class LiveDataActivity : AppCompatActivity() {
         subscribe()
     }
 
-    private fun subscribe() = with(binding){
+    private fun subscribe() = with(binding) {
         val elapsedTimeObserver = Observer<Long?> { aLong ->
             val newText = this@LiveDataActivity.resources.getString(R.string.tvSeconds, aLong)
             tvTimer.text = newText
