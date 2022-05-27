@@ -9,6 +9,7 @@ import com.taufik.androidfundamental.data.response.CustomerReviewsItem
 import com.taufik.androidfundamental.data.response.PostReviewResponse
 import com.taufik.androidfundamental.data.response.Restaurant
 import com.taufik.androidfundamental.data.response.RestaurantResponse
+import com.taufik.androidfundamental.utils.Event
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -24,8 +25,8 @@ class LiveDataApiViewModel : ViewModel() {
     private val _isLoading = MutableLiveData<Boolean>()
     val isLoading: LiveData<Boolean> = _isLoading
 
-    private val _snackBarText = MutableLiveData<String>()
-    val snackBarText: LiveData<String> = _snackBarText
+    private val _snackBarText = MutableLiveData<Event<String>>()
+    val snackBarText: LiveData<Event<String>> = _snackBarText
 
     private val client = ApiConfig.getApiService()
 
@@ -72,7 +73,7 @@ class LiveDataApiViewModel : ViewModel() {
                     val responseBody = response.body()
                     if (response.isSuccessful && responseBody != null) {
                         _listReview.value = responseBody.customerReviews
-                        _snackBarText.value = responseBody.message
+                        _snackBarText.value = Event(responseBody.message)
                     } else {
                         Log.e(TAG, "onResponse: ${response.message()}")
                     }
