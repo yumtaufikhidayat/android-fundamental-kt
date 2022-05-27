@@ -48,11 +48,13 @@ class RetrofitActivity : AppCompatActivity() {
         }
 
         viewModel.snackBarText.observe(this) {
-            Snackbar.make(
-                window.decorView.rootView,
-                it,
-                Snackbar.LENGTH_SHORT
-            ).show()
+            it.getContentIfNotHandled()?.let { text ->
+                Snackbar.make(
+                    window.decorView.rootView,
+                    text,
+                    Snackbar.LENGTH_SHORT
+                ).show()
+            }
         }
     }
 
