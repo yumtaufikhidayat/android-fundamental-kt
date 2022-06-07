@@ -40,11 +40,7 @@ class CategoryFragment : Fragment() {
             val mFragmentManager = parentFragmentManager
             mFragmentManager.commit {
                 addToBackStack(null)
-                replace(
-                    R.id.frameContainer,
-                    mDetailCategoryFragment,
-                    DetailCategoryFragment::class.java.simpleName
-                )
+                replace(R.id.frameContainer, mDetailCategoryFragment, DetailCategoryFragment::class.java.simpleName)
             }
         }
     }
