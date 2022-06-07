@@ -12,9 +12,6 @@
     android:supportsRtl="true"
     android:theme="@style/Theme.AndroidFundamental">
     <activity
-        android:name=".activity.ActivityKTXFragmentKTXActivity"
-        android:exported="false" />
-    <activity
         android:name=".activity.ViewModelActivity"
         android:exported="false" />
     <activity
@@ -66,7 +63,7 @@
         android:name=".activity.ConstraintLayoutActivity"
         android:exported="false" />
     <activity
-        android:name=".activity.MainActivity"
+        android:name=".activity.RetrofitActivity"
         android:exported="false" />
     <activity
         android:name=".activity.ViewViewGroupActivity"
@@ -93,7 +90,7 @@
         android:name=".activity.VolumeActivity"
         android:exported="false" />
     <activity
-        android:name=".activity.RetrofitActivity"
+        android:name=".activity.MainActivity"
         android:theme="@style/Theme.AndroidFundamental"
         android:exported="true">
         <intent-filter>
