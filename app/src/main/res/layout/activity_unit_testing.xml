@@ -123,7 +123,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="@string/tvResult"
+            tools:text="@string/tvResult"
             android:textStyle="bold"
             android:textSize="24sp"
             app:layout_constraintStart_toStartOf="parent"
