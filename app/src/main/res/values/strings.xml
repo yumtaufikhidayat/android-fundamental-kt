@@ -154,4 +154,9 @@
 
     <string name="tvSeconds">%d seconds elapsed</string>
     <string name="tvHelloDicoding">Hello Dicoding!</string>
+
+    <string name="actionCalculateVolume">Hitung Volume</string>
+    <string name="actionCalculateSurfaceArea">Hitung Luas</string>
+    <string name="actionCalculateCircumference">Hitung Keliling</string>
+    <string name="actionSave">Simpan</string>
 </resources>
