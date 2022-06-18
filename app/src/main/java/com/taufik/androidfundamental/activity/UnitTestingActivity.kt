@@ -34,19 +34,17 @@ class UnitTestingActivity : AppCompatActivity(), View.OnClickListener {
         btnCalculateCircumference.setOnClickListener(this@UnitTestingActivity)
     }
 
-    private fun isVisibility(isShow: Boolean) {
-        with(binding) {
-            btnSave.visibility = if (isShow) {
-                View.GONE
-            } else {
-                View.VISIBLE
-            }
+    private fun isVisibility(isShow: Boolean) = with(binding) {
+        btnSave.visibility = if (isShow) {
+            View.GONE
+        } else {
+            View.VISIBLE
+        }
 
-            btnVisibility.visibility = if (isShow) {
-                View.VISIBLE
-            } else {
-                View.GONE
-            }
+        btnVisibility.visibility = if (isShow) {
+            View.VISIBLE
+        } else {
+            View.GONE
         }
     }
 
