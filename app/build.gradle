@@ -4,6 +4,7 @@ plugins {
     id 'kotlin-parcelize'
     id "androidx.navigation.safeargs"
 }
+apply plugin: 'kotlin-android'
 
 android {
     compileSdk 31
@@ -84,4 +85,9 @@ dependencies {
     // View KTX
     implementation "androidx.activity:activity-ktx:1.4.0"
     implementation "androidx.fragment:fragment-ktx:1.4.1"
+    implementation "androidx.core:core-ktx:+"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+}
+repositories {
+    mavenCentral()
 }
