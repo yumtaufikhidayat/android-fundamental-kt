@@ -40,6 +40,7 @@
         <entry key="app/src/main/res/layout/activity_style_theme.xml" value="0.18333333333333332" />
         <entry key="app/src/main/res/layout/activity_subway.xml" value="0.17533783783783785" />
         <entry key="app/src/main/res/layout/activity_tab_layout.xml" value="0.17533783783783785" />
+        <entry key="app/src/main/res/layout/activity_ui_testing.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_unit_testing.xml" value="0.14097222222222222" />
         <entry key="app/src/main/res/layout/activity_view_model.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_view_view_group.xml" value="0.1" />

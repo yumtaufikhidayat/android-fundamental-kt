@@ -11,8 +11,11 @@
     android:roundIcon="@mipmap/ic_launcher_round"
     android:supportsRtl="true"
     android:theme="@style/Theme.AndroidFundamental">
-    <activity android:name=".activity.MainActivity"
+    <activity android:name=".activity.UnitTestingActivity"
         android:exported="false"/>
+    <activity
+        android:name=".activity.MainActivity"
+        android:exported="false" />
     <activity
         android:name=".activity.ViewModelActivity"
         android:exported="false" />
@@ -92,7 +95,7 @@
         android:name=".activity.VolumeActivity"
         android:exported="false" />
     <activity
-        android:name=".activity.UnitTestingActivity"
+        android:name=".activity.UITestingActivity"
         android:theme="@style/Theme.AndroidFundamental"
         android:exported="true">
         <intent-filter>
