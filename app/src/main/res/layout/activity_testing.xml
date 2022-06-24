@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.TestingActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tvLengthTest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tvLength"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/etLengthTest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/tvLength"
+            android:autofillHints="Panjang"
+            android:inputType="numberDecimal"
+            app:layout_constraintTop_toBottomOf="@id/tvLengthTest"
+            app:layout_constraintStart_toStartOf="@id/tvLengthTest"/>
+
+        <TextView
+            android:id="@+id/tvWidth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tvWidth"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etLengthTest" />
+
+        <EditText
+            android:id="@+id/etWidthTest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/tvWidth"
+            android:autofillHints="Lebar"
+            android:inputType="numberDecimal"
+            app:layout_constraintTop_toBottomOf="@id/tvWidth"
+            app:layout_constraintStart_toStartOf="@id/tvLengthTest"/>
+
+        <TextView
+            android:id="@+id/tvHeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tvHeight"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etWidthTest" />
+
+        <EditText
+            android:id="@+id/etHeightTest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/tvHeight"
+            android:autofillHints="Tinggi"
+            android:inputType="numberDecimal"
+            app:layout_constraintTop_toBottomOf="@id/tvHeight"
+            app:layout_constraintStart_toStartOf="@id/tvLengthTest"/>
+
+        <Button
+            android:id="@+id/btnSaveTest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="@string/actionSave"
+            app:layout_constraintTop_toBottomOf="@id/etHeightTest"
+            app:layout_constraintStart_toStartOf="@id/tvLengthTest"
+            app:layout_constraintEnd_toEndOf="@id/tvLengthTest"/>
+
+        <Button
+            android:id="@+id/btnCalculateVolumeTest"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:text="@string/actionCalculateVolume"
+            app:layout_constraintTop_toBottomOf="@id/etHeightTest"
+            app:layout_constraintStart_toStartOf="@id/tvLengthTest"
+            app:layout_constraintEnd_toStartOf="@id/btnCalculateCircumferenceTest"/>
+
+        <Button
+            android:id="@+id/btnCalculateCircumferenceTest"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="@string/actionCalculateCircumference"
+            app:layout_constraintTop_toTopOf="@+id/btnCalculateVolumeTest"
+            app:layout_constraintBottom_toBottomOf="@+id/btnCalculateVolumeTest"
+            app:layout_constraintStart_toEndOf="@id/btnCalculateVolumeTest"
+            app:layout_constraintEnd_toStartOf="@id/btnCalculateSurfaceAreaTest"/>
+
+        <Button
+            android:id="@+id/btnCalculateSurfaceAreaTest"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="@string/actionCalculateSurfaceArea"
+            app:layout_constraintTop_toTopOf="@+id/btnCalculateVolumeTest"
+            app:layout_constraintBottom_toBottomOf="@id/btnCalculateVolumeTest"
+            app:layout_constraintStart_toEndOf="@id/btnCalculateCircumferenceTest"
+            app:layout_constraintEnd_toEndOf="@id/btnSaveTest"/>
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/btnVisibility"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:constraint_referenced_ids="btnCalculateVolumeTest, btnCalculateSurfaceAreaTest, btnCalculateCircumferenceTest"
+            tools:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/tvResultTest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            tools:text="@string/tvResult"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnCalculateVolumeTest" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
