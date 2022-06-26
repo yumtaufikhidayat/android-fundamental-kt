@@ -58,6 +58,7 @@ class TestingActivityTest{
         onView(withId(R.id.tvResultTest)).check(matches(isDisplayed()))
         onView(withId(R.id.tvResultTest)).check(matches(withText(dummySurfaceArea)))
     }
+
     @Test
     fun assertGetVolume() {
         onView(withId(R.id.etLengthTest)).perform(typeText(dummyLength), closeSoftKeyboard())
@@ -73,6 +74,7 @@ class TestingActivityTest{
         onView(withId(R.id.tvResultTest)).check(matches(isDisplayed()))
         onView(withId(R.id.tvResultTest)).check(matches(withText(dummyVolume)))
     }
+
     //Pengecekan untuk empty input
     @Test
     fun assertEmptyInput() {
