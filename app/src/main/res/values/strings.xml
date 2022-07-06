@@ -159,4 +159,8 @@
     <string name="actionCalculateSurfaceArea">Hitung Luas</string>
     <string name="actionCalculateCircumference">Hitung Keliling</string>
     <string name="actionSave">Simpan</string>
+
+    <string name="file_new">File New</string>
+    <string name="file_open">File Open</string>
+    <string name="file_save">File Save</string>
 </resources>

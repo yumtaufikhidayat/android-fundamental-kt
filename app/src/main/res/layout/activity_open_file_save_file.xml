@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.OpenFileSaveFileActivity">
+
+    <Button
+        android:id="@+id/btnNew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/file_new"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnOpen"/>
+
+  <Button
+      android:id="@+id/btnOpen"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/file_open"
+      app:layout_constraintTop_toTopOf="@id/btnNew"
+      app:layout_constraintStart_toEndOf="@id/btnNew"
+      app:layout_constraintEnd_toStartOf="@id/btnSave"/>
+
+  <Button
+      android:id="@+id/btnSave"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/file_save"
+      app:layout_constraintTop_toTopOf="@id/btnNew"
+      app:layout_constraintStart_toEndOf="@id/btnOpen"
+      app:layout_constraintEnd_toEndOf="parent"/>
+
+  <EditText
+      android:id="@+id/etTitle"
+      android:layout_width="0dp"
+      android:layout_height="40dp"
+      android:layout_marginTop="16dp"
+      android:paddingHorizontal="8dp"
+      android:inputType="text"
+      android:autofillHints="title"
+      android:hint="@string/title"
+      android:background="@drawable/bg_edit_text"
+      app:layout_constraintTop_toBottomOf="@id/btnNew"
+      app:layout_constraintStart_toStartOf="@id/btnNew"
+      app:layout_constraintEnd_toEndOf="@id/btnSave"/>
+
+  <EditText
+      android:id="@+id/etDescription"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_marginVertical="16dp"
+      android:paddingVertical="8dp"
+      android:paddingHorizontal="8dp"
+      android:background="@drawable/bg_edit_text"
+      android:hint="@string/description"
+      android:gravity="top|start"
+      android:inputType="textMultiLine|textNoSuggestions"
+      android:autofillHints="text"
+      app:layout_constraintTop_toBottomOf="@id/etTitle"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="@id/btnNew"
+      app:layout_constraintEnd_toEndOf="@id/btnSave"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
