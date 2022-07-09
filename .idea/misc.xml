@@ -19,6 +19,7 @@
         <entry key="app/src/main/res/layout/activity_coroutine.xml" value="0.17533783783783785" />
         <entry key="app/src/main/res/layout/activity_custom_button_edit_text.xml" value="0.165" />
         <entry key="app/src/main/res/layout/activity_debug.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_form_user_preference.xml" value="0.10246259901258681" />
         <entry key="app/src/main/res/layout/activity_intent.xml" value="0.2703125" />
         <entry key="app/src/main/res/layout/activity_ktxfragment_ktxactivity.xml" value="0.11979166666666667" />
         <entry key="app/src/main/res/layout/activity_list_quote_loop_jactivity.xml" value="0.1" />
@@ -39,6 +40,7 @@
         <entry key="app/src/main/res/layout/activity_profile.xml" value="0.2703125" />
         <entry key="app/src/main/res/layout/activity_recycler_view.xml" value="0.17357859531772576" />
         <entry key="app/src/main/res/layout/activity_retrofit.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_shared_preferences.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_style_theme.xml" value="0.18333333333333332" />
         <entry key="app/src/main/res/layout/activity_subway.xml" value="0.17533783783783785" />
         <entry key="app/src/main/res/layout/activity_tab_layout.xml" value="0.17533783783783785" />
