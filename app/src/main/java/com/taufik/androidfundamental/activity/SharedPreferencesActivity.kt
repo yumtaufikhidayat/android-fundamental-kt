@@ -79,8 +79,7 @@ class SharedPreferencesActivity : AppCompatActivity() {
 
     private fun setAction() = with(binding) {
         btnSave.setOnClickListener {
-            val intent =
-                Intent(this@SharedPreferencesActivity, FormUserPreferenceActivity::class.java)
+            val intent = Intent(this@SharedPreferencesActivity, FormUserPreferenceActivity::class.java)
             when {
                 isPreferenceEmpty -> {
                     intent.apply {
