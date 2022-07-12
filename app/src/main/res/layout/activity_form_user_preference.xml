@@ -30,100 +30,100 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
-      <com.google.android.material.textfield.TextInputLayout
-          android:id="@+id/etInputEmail"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:layout_marginTop="16dp"
-          app:layout_constraintTop_toBottomOf="@id/etInputName"
-          app:layout_constraintStart_toStartOf="parent">
-
-        <EditText
-            android:id="@+id/etEmail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/email"
-            android:inputType="textEmailAddress"
-            android:maxLines="1"
-            android:autofillHints="emailAddress" />
-
-      </com.google.android.material.textfield.TextInputLayout>
-
-      <com.google.android.material.textfield.TextInputLayout
-          android:id="@+id/etInputPhoneNumber"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:layout_marginTop="16dp"
-          app:layout_constraintTop_toBottomOf="@id/etInputEmail"
-          app:layout_constraintStart_toStartOf="parent">
-
-        <EditText
-            android:id="@+id/etPhoneNumber"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/phone_number"
-            android:inputType="phone"
-            android:maxLines="1"
-            android:autofillHints="phone" />
-
-      </com.google.android.material.textfield.TextInputLayout>
-
-      <com.google.android.material.textfield.TextInputLayout
-          android:id="@+id/etInputAge"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:layout_marginTop="16dp"
-          app:layout_constraintTop_toBottomOf="@id/etInputPhoneNumber"
-          app:layout_constraintStart_toStartOf="parent">
-
-        <EditText
-            android:id="@+id/etAge"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/age"
-            android:inputType="number"
-            android:maxLines="1"
-            android:autofillHints="age" />
-
-      </com.google.android.material.textfield.TextInputLayout>
-
-      <TextView
-          android:id="@+id/tvIsLoveMuTitle"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:layout_marginTop="16dp"
-          android:text="@string/love_manchester_united"
-          app:layout_constraintTop_toBottomOf="@id/etInputAge"/>
-
-      <RadioGroup
-          android:id="@+id/rgLoveMu"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:layout_marginTop="16dp"
-          app:layout_constraintTop_toBottomOf="@id/tvIsLoveMuTitle">
-
-          <RadioButton
-              android:id="@+id/rbYes"
+        <com.google.android.material.textfield.TextInputLayout
+              android:id="@+id/etInputEmail"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
-              android:text="@string/yes"/>
+              android:layout_marginTop="16dp"
+              app:layout_constraintTop_toBottomOf="@id/etInputName"
+              app:layout_constraintStart_toStartOf="parent">
 
-          <RadioButton
-              android:id="@+id/rbNo"
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:autofillHints="emailAddress" />
+
+          </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+              android:id="@+id/etInputPhoneNumber"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
-              android:text="@string/no"/>
+              android:layout_marginTop="16dp"
+              app:layout_constraintTop_toBottomOf="@id/etInputEmail"
+              app:layout_constraintStart_toStartOf="parent">
 
-      </RadioGroup>
+            <EditText
+                android:id="@+id/etPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/phone_number"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:autofillHints="phone" />
 
-      <Button
-          android:id="@+id/btnSave"
-          style="@style/Widget.AppCompat.Button.Colored"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:layout_marginTop="16dp"
-          android:text="@string/save"
-          app:layout_constraintTop_toBottomOf="@id/rgLoveMu"/>
+          </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+              android:id="@+id/etInputAge"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="16dp"
+              app:layout_constraintTop_toBottomOf="@id/etInputPhoneNumber"
+              app:layout_constraintStart_toStartOf="parent">
+
+            <EditText
+                android:id="@+id/etAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/age"
+                android:inputType="number"
+                android:maxLines="1"
+                android:autofillHints="age" />
+
+          </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+              android:id="@+id/tvIsLoveMuTitle"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="16dp"
+              android:text="@string/love_manchester_united"
+              app:layout_constraintTop_toBottomOf="@id/etInputAge"/>
+
+        <RadioGroup
+              android:id="@+id/rgLoveMu"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="16dp"
+              app:layout_constraintTop_toBottomOf="@id/tvIsLoveMuTitle">
+
+              <RadioButton
+                  android:id="@+id/rbYes"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="@string/yes"/>
+
+              <RadioButton
+                  android:id="@+id/rbNo"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="@string/no"/>
+
+          </RadioGroup>
+
+        <Button
+              android:id="@+id/btnSave"
+              style="@style/Widget.AppCompat.Button.Colored"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="16dp"
+              android:text="@string/save"
+              app:layout_constraintTop_toBottomOf="@id/rgLoveMu"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
