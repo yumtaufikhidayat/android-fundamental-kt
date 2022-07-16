@@ -3,8 +3,8 @@
     <CLASSES>
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/0c08cb1680c819f549f4cb56d284f0d6/transformed/rules-1.4.0/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/21b7e40267574386609bdd4805d497d9/transformed/rules-1.4.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/0c08cb1680c819f549f4cb56d284f0d6/transformed/rules-1.4.0/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/0c08cb1680c819f549f4cb56d284f0d6/transformed/rules-1.4.0/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/21b7e40267574386609bdd4805d497d9/transformed/rules-1.4.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/21b7e40267574386609bdd4805d497d9/transformed/rules-1.4.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.test/rules/1.4.0/326d97acb2a9cf7cbff243e63d1d45fa354b8ec7/rules-1.4.0-javadoc.jar!/" />

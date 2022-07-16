@@ -178,4 +178,12 @@
     <string name="dummy_number">123456</string>
     <string name="dummy_age">30</string>
     <string name="dummy_is_love">IsLoveMU</string>
+
+    <string name="nothing">Tidak Ada</string>
+    <string name="is_love">Suka Manchester United</string>
+    <string name="key_email">email</string>
+    <string name="key_age">age</string>
+    <string name="key_phone">phone</string>
+    <string name="key_love">love</string>
+    <string name="key_name">name</string>
 </resources>

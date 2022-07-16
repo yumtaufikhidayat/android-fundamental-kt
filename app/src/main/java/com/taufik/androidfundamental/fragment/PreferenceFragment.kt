@@ -1,0 +1,80 @@
+package com.taufik.androidfundamental.fragment
+
+import android.content.SharedPreferences
+import android.os.Bundle
+import androidx.preference.CheckBoxPreference
+import androidx.preference.EditTextPreference
+import androidx.preference.PreferenceFragmentCompat
+import com.taufik.androidfundamental.R
+
+class PreferenceFragment: PreferenceFragmentCompat(), SharedPreferences.OnSharedPreferenceChangeListener {
+
+    private lateinit var namePreference: EditTextPreference
+    private lateinit var emailPreference: EditTextPreference
+    private lateinit var agePreference: EditTextPreference
+    private lateinit var phonePreference: EditTextPreference
+    private lateinit var isLoveMuPreference: CheckBoxPreference
+
+    override fun onCreatePreferences(bundle: Bundle?, string: String?) {
+        addPreferencesFromResource(R.xml.preferences)
+        init()
+        setSummaries()
+    }
+
+    private fun init() {
+        NAME = resources.getString(R.string.key_name)
+        EMAIL = resources.getString(R.string.key_email)
+        AGE = resources.getString(R.string.key_age)
+        PHONE = resources.getString(R.string.key_phone)
+        LOVE = resources.getString(R.string.key_love)
+
+        namePreference = findPreference<EditTextPreference> (NAME) as EditTextPreference
+        emailPreference = findPreference<EditTextPreference>(EMAIL) as EditTextPreference
+        agePreference = findPreference<EditTextPreference>(AGE) as EditTextPreference
+        phonePreference = findPreference<EditTextPreference>(PHONE) as EditTextPreference
+        isLoveMuPreference = findPreference<CheckBoxPreference>(LOVE) as CheckBoxPreference
+    }
+
+    private fun setSummaries() {
+        val sh = preferenceManager.sharedPreferences
+        sh?.let {
+            namePreference.summary = it.getString(NAME, DEFAULT_VALUE)
+            emailPreference.summary = it.getString(EMAIL, DEFAULT_VALUE)
+            agePreference.summary = it.getString(AGE, DEFAULT_VALUE)
+            phonePreference.summary = it.getString(PHONE, DEFAULT_VALUE)
+            isLoveMuPreference.isChecked = it.getBoolean(LOVE, false)
+        }
+    }
+
+    override fun onSharedPreferenceChanged(sharedPreferences: SharedPreferences?, key: String?) {
+        sharedPreferences?.let {
+            when (key) {
+                NAME -> namePreference.summary = it.getString(NAME, DEFAULT_VALUE)
+                EMAIL -> emailPreference.summary = it.getString(EMAIL, DEFAULT_VALUE)
+                AGE -> agePreference.summary = it.getString(AGE, DEFAULT_VALUE)
+                PHONE -> phonePreference.summary = it.getString(PHONE, DEFAULT_VALUE)
+                LOVE -> isLoveMuPreference.isChecked = it.getBoolean(LOVE, false)
+            }
+        }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        preferenceScreen.sharedPreferences?.registerOnSharedPreferenceChangeListener(this)
+    }
+
+    override fun onPause() {
+        super.onPause()
+        preferenceScreen.sharedPreferences?.unregisterOnSharedPreferenceChangeListener(this)
+    }
+
+    companion object {
+        private const val DEFAULT_VALUE = "Tidak Ada"
+
+        private lateinit var NAME: String
+        private lateinit var EMAIL: String
+        private lateinit var AGE: String
+        private lateinit var PHONE: String
+        private lateinit var LOVE: String
+    }
+}
