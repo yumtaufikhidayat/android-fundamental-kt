@@ -11,11 +11,15 @@
     android:roundIcon="@mipmap/ic_launcher_round"
     android:supportsRtl="true"
     android:theme="@style/Theme.AndroidFundamental">
-    <activity android:name=".activity.SharedPreferencesActivity"
-        android:exported="false"/>
+    <activity
+        android:name=".activity.SettingsSharedPreferencesActivity"
+        android:exported="false" />
+    <activity
+        android:name=".activity.SharedPreferencesActivity"
+        android:exported="false" />
     <activity
         android:name=".activity.FormUserPreferenceActivity"
-        android:exported="false"/>
+        android:exported="false" />
     <activity
         android:name=".activity.OpenFileSaveFileActivity"
         android:exported="false" />
@@ -104,7 +108,7 @@
         android:name=".activity.VolumeActivity"
         android:exported="false" />
     <activity
-        android:name=".activity.SettingsSharedPreferencesActivity"
+        android:name=".activity.DataStoreActivity"
         android:theme="@style/Theme.AndroidFundamental"
         android:exported="true">
         <intent-filter>
