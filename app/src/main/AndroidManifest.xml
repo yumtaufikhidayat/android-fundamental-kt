@@ -109,7 +109,7 @@
         android:exported="false" />
     <activity
         android:name=".activity.DataStoreActivity"
-        android:theme="@style/Theme.AndroidFundamental"
+        android:theme="@style/Theme.DayNight.AndroidFundamental"
         android:exported="true">
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
