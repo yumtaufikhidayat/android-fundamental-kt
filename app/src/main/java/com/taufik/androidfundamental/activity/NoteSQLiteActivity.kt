@@ -62,7 +62,6 @@ class NoteSQLiteActivity : AppCompatActivity() {
         })
 
         rvNotes.adapter = noteAdapter
-        Log.i("Note app", "showData: ")
     }
 
     private fun fabAction() = with(binding) {
