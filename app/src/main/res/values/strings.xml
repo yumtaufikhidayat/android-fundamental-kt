@@ -188,4 +188,8 @@
     <string name="key_name">name</string>
 
     <string name="dark_mode">Dark Mode</string>
+
+    <string name="submit">Submit</string>
+    <string name="delete">Hapus</string>
+    <string name="date">Date</string>
 </resources>

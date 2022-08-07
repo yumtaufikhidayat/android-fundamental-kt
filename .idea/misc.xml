@@ -7,7 +7,9 @@
         <entry key="app/src/main/res/drawable/bg_button.xml" value="0.1345" />
         <entry key="app/src/main/res/drawable/bg_button_disable.xml" value="0.1345" />
         <entry key="app/src/main/res/drawable/bg_edit_text.xml" value="0.172" />
+        <entry key="app/src/main/res/drawable/ic_add.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_announcement.xml" value="0.158" />
+        <entry key="app/src/main/res/drawable/ic_delete.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_grid.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_list.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_menu_slideshow.xml" value="0.1055" />
@@ -36,6 +38,8 @@
         <entry key="app/src/main/res/layout/activity_move_with_data.xml" value="0.2703125" />
         <entry key="app/src/main/res/layout/activity_move_with_object.xml" value="0.2703125" />
         <entry key="app/src/main/res/layout/activity_navigation_drawer.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_note_add_update.xml" value="0.1875" />
+        <entry key="app/src/main/res/layout/activity_note_sqlite.xml" value="0.1798611111111111" />
         <entry key="app/src/main/res/layout/activity_open_file_save_file.xml" value="0.2" />
         <entry key="app/src/main/res/layout/activity_option_menu.xml" value="0.17533783783783785" />
         <entry key="app/src/main/res/layout/activity_profile.xml" value="0.2703125" />
@@ -75,10 +79,12 @@
         <entry key="app/src/main/res/layout/item_grid_countries.xml" value="0.17533783783783785" />
         <entry key="app/src/main/res/layout/item_list_countries.xml" value="0.17357859531772576" />
         <entry key="app/src/main/res/layout/item_list_quotes.xml" value="0.1111111111111111" />
+        <entry key="app/src/main/res/layout/item_note.xml" value="0.1" />
         <entry key="app/src/main/res/layout/item_review.xml" value="0.175" />
         <entry key="app/src/main/res/layout/nav_header_navigation_drawer.xml" value="0.17533783783783785" />
         <entry key="app/src/main/res/menu/activity_main_drawer.xml" value="0.17533783783783785" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.17533783783783785" />
+        <entry key="app/src/main/res/menu/menu_form.xml" value="0.1" />
         <entry key="app/src/main/res/menu/navigation_drawer.xml" value="0.17533783783783785" />
         <entry key="app/src/main/res/menu/option_menu.xml" value="0.17533783783783785" />
         <entry key="app/src/main/res/xml/preferences.xml" value="0.2" />

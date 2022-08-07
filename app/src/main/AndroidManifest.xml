@@ -12,6 +12,10 @@
     android:supportsRtl="true"
     android:theme="@style/Theme.AndroidFundamental">
     <activity
+        android:name=".activity.NoteAddUpdateActivity"
+        android:theme="@style/Theme.DayNight.AndroidFundamental"
+        android:exported="false" />
+    <activity
         android:name=".activity.DataStoreActivity"
         android:exported="false" />
     <activity

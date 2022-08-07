@@ -28,7 +28,7 @@ class MyEditText: AppCompatEditText, View.OnTouchListener {
     }
 
     private fun init() {
-        mClearButtonImage = ContextCompat.getDrawable(context, R.drawable.ic_close) as Drawable
+        mClearButtonImage = ContextCompat.getDrawable(context, R.drawable.ic_delete) as Drawable
         setOnTouchListener(this)
 
         addTextChangedListener(object : TextWatcher{
@@ -82,13 +82,13 @@ class MyEditText: AppCompatEditText, View.OnTouchListener {
             when {
                 isClearButtonClicked -> when (event!!.action) {
                     MotionEvent.ACTION_DOWN -> {
-                        mClearButtonImage = ContextCompat.getDrawable(context, R.drawable.ic_close) as Drawable
+                        mClearButtonImage = ContextCompat.getDrawable(context, R.drawable.ic_delete) as Drawable
                         showClearButton()
                         return true
                     }
 
                     MotionEvent.ACTION_UP -> {
-                        mClearButtonImage = ContextCompat.getDrawable(context, R.drawable.ic_close) as Drawable
+                        mClearButtonImage = ContextCompat.getDrawable(context, R.drawable.ic_delete) as Drawable
                         when {
                             text != null -> text?.clear()
                         }
