@@ -45,6 +45,8 @@ class NoteSQLiteActivity : AppCompatActivity() {
     private fun initView() = with(binding) {
         rvNotes.apply {
             layoutManager = LinearLayoutManager(this@NoteSQLiteActivity)
+            (layoutManager as LinearLayoutManager).reverseLayout = true
+            (layoutManager as LinearLayoutManager).stackFromEnd = true
             setHasFixedSize(true)
         }
     }
