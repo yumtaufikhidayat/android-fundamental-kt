@@ -6,8 +6,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.taufik.androidfundamental.viewmodel.RoomNoteAddUpdateViewModel
 import com.taufik.androidfundamental.viewmodel.RoomNoteViewModel
 
-class RoomViewModelFactory private constructor(private val application: Application) :
-    ViewModelProvider.NewInstanceFactory() {
+class RoomViewModelFactory private constructor(private val application: Application) : ViewModelProvider.NewInstanceFactory() {
 
     @Suppress("UNCHECKED_CAST")
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
