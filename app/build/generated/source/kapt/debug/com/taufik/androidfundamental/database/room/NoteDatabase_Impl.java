@@ -4,13 +4,19 @@ import androidx.annotation.NonNull;
 import androidx.room.DatabaseConfiguration;
 import androidx.room.InvalidationTracker;
 import androidx.room.RoomOpenHelper;
+import androidx.room.RoomOpenHelper.Delegate;
+import androidx.room.RoomOpenHelper.ValidationResult;
 import androidx.room.migration.AutoMigrationSpec;
 import androidx.room.migration.Migration;
 import androidx.room.util.DBUtil;
 import androidx.room.util.TableInfo;
+import androidx.room.util.TableInfo.Column;
+import androidx.room.util.TableInfo.ForeignKey;
+import androidx.room.util.TableInfo.Index;
 import androidx.sqlite.db.SupportSQLiteDatabase;
 import androidx.sqlite.db.SupportSQLiteOpenHelper;
-
+import androidx.sqlite.db.SupportSQLiteOpenHelper.Callback;
+import androidx.sqlite.db.SupportSQLiteOpenHelper.Configuration;
 import java.lang.Class;
 import java.lang.Override;
 import java.lang.String;
@@ -87,7 +93,7 @@ public final class NoteDatabase_Impl extends NoteDatabase {
         final TableInfo _infoTblNote = new TableInfo("tbl_note", _columnsTblNote, _foreignKeysTblNote, _indicesTblNote);
         final TableInfo _existingTblNote = TableInfo.read(_db, "tbl_note");
         if (! _infoTblNote.equals(_existingTblNote)) {
-          return new RoomOpenHelper.ValidationResult(false, "tbl_note(com.taufik.androidfundamental.db.room.NoteEntity).\n"
+          return new RoomOpenHelper.ValidationResult(false, "tbl_note(com.taufik.androidfundamental.database.room.NoteEntity).\n"
                   + " Expected:\n" + _infoTblNote + "\n"
                   + " Found:\n" + _existingTblNote);
         }
