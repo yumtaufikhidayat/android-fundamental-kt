@@ -1,9 +1,9 @@
-package com.taufik.androidfundamental.db.sqlite
+package com.taufik.androidfundamental.database.sqlite
 
 import android.content.Context
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
-import com.taufik.androidfundamental.db.sqlite.DatabaseContract.NoteColumns.Companion.TABLE_NAME
+import com.taufik.androidfundamental.database.sqlite.DatabaseContract.NoteColumns.Companion.TABLE_NAME
 
 internal class DatabaseHelper(context: Context): SQLiteOpenHelper (
     context,

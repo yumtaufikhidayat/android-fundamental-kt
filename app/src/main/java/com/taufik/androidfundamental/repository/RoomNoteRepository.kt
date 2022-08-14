@@ -2,9 +2,9 @@ package com.taufik.androidfundamental.repository
 
 import android.app.Application
 import androidx.lifecycle.LiveData
-import com.taufik.androidfundamental.db.room.NoteDao
-import com.taufik.androidfundamental.db.room.NoteDatabase
-import com.taufik.androidfundamental.db.room.NoteEntity
+import com.taufik.androidfundamental.database.room.NoteDao
+import com.taufik.androidfundamental.database.room.NoteDatabase
+import com.taufik.androidfundamental.database.room.NoteEntity
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
 

@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import com.taufik.androidfundamental.R
 import com.taufik.androidfundamental.databinding.ActivityRoomNoteAddUpdateBinding
-import com.taufik.androidfundamental.db.room.NoteEntity
+import com.taufik.androidfundamental.database.room.NoteEntity
 import com.taufik.androidfundamental.factory.RoomViewModelFactory
 import com.taufik.androidfundamental.utils.DateHelper
 import com.taufik.androidfundamental.viewmodel.RoomNoteAddUpdateViewModel

@@ -1,7 +1,7 @@
 package com.taufik.androidfundamental.utils
 
 import androidx.recyclerview.widget.DiffUtil
-import com.taufik.androidfundamental.db.room.NoteEntity
+import com.taufik.androidfundamental.database.room.NoteEntity
 
 class NoteDiffCallback(
     private val mOldNoteList: List<NoteEntity>,

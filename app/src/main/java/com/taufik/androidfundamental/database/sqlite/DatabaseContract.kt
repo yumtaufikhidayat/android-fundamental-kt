@@ -1,4 +1,4 @@
-package com.taufik.androidfundamental.db.sqlite
+package com.taufik.androidfundamental.database.sqlite
 
 import android.provider.BaseColumns
 

@@ -2,7 +2,7 @@ package com.taufik.androidfundamental.utils
 
 import android.database.Cursor
 import com.taufik.androidfundamental.data.Note
-import com.taufik.androidfundamental.db.sqlite.DatabaseContract
+import com.taufik.androidfundamental.database.sqlite.DatabaseContract
 
 object MappingHelper {
     fun mapCursorToArrayList(notesCursor: Cursor?): ArrayList<Note> {

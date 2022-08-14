@@ -1,4 +1,4 @@
-package com.taufik.androidfundamental.db.room
+package com.taufik.androidfundamental.database.room
 
 import androidx.lifecycle.LiveData
 import androidx.room.*

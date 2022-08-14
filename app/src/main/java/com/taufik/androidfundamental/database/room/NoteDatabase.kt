@@ -1,4 +1,4 @@
-package com.taufik.androidfundamental.db.room
+package com.taufik.androidfundamental.database.room
 
 import android.content.Context
 import androidx.room.Database

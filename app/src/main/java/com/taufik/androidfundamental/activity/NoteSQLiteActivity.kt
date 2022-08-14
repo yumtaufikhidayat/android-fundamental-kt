@@ -12,7 +12,7 @@ import com.google.android.material.snackbar.Snackbar
 import com.taufik.androidfundamental.adapter.NoteAdapter
 import com.taufik.androidfundamental.data.Note
 import com.taufik.androidfundamental.databinding.ActivityNoteSqliteBinding
-import com.taufik.androidfundamental.db.sqlite.NoteHelper
+import com.taufik.androidfundamental.database.sqlite.NoteHelper
 import com.taufik.androidfundamental.utils.MappingHelper
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async

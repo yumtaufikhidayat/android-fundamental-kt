@@ -2,7 +2,7 @@ package com.taufik.androidfundamental.viewmodel
 
 import android.app.Application
 import androidx.lifecycle.ViewModel
-import com.taufik.androidfundamental.db.room.NoteEntity
+import com.taufik.androidfundamental.database.room.NoteEntity
 import com.taufik.androidfundamental.repository.RoomNoteRepository
 
 class RoomNoteAddUpdateViewModel(application: Application): ViewModel() {
