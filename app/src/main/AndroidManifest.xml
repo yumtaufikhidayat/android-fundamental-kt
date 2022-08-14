@@ -12,7 +12,15 @@
     android:supportsRtl="true"
     android:theme="@style/Theme.AndroidFundamental">
     <activity
+        android:name=".activity.RoomNoteAddUpdateActivity"
+        android:theme="@style/Theme.DayNight.AndroidFundamental"
+        android:exported="false" />
+    <activity
         android:name=".activity.NoteAddUpdateActivity"
+        android:theme="@style/Theme.DayNight.AndroidFundamental"
+        android:exported="false" />
+    <activity
+        android:name=".activity.NoteSQLiteActivity"
         android:theme="@style/Theme.DayNight.AndroidFundamental"
         android:exported="false" />
     <activity
@@ -115,7 +123,7 @@
         android:name=".activity.VolumeActivity"
         android:exported="false" />
     <activity
-        android:name=".activity.NoteSQLiteActivity"
+        android:name=".activity.RoomActivity"
         android:theme="@style/Theme.DayNight.AndroidFundamental"
         android:exported="true">
         <intent-filter>

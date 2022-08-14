@@ -45,6 +45,8 @@
         <entry key="app/src/main/res/layout/activity_profile.xml" value="0.2703125" />
         <entry key="app/src/main/res/layout/activity_recycler_view.xml" value="0.17357859531772576" />
         <entry key="app/src/main/res/layout/activity_retrofit.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_room.xml" value="0.1875" />
+        <entry key="app/src/main/res/layout/activity_room_note_add_update.xml" value="0.1875" />
         <entry key="app/src/main/res/layout/activity_settings_shared_preferences.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_shared_preferences.xml" value="0.2" />
         <entry key="app/src/main/res/layout/activity_style_theme.xml" value="0.18333333333333332" />

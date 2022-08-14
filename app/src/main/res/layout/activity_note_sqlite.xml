@@ -33,6 +33,7 @@
         android:foregroundGravity="bottom"
         android:contentDescription="@null"
         android:backgroundTint="@color/purple_700"
+        app:borderWidth="0dp"
         app:tint="@color/white"
         app:fabSize="normal"
         app:srcCompat="@drawable/ic_add"
