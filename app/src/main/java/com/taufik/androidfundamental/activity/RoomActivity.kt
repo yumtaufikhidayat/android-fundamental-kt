@@ -31,6 +31,8 @@ class RoomActivity : AppCompatActivity() {
         noteAdapter = RoomNoteAdapter()
         rvNotes.apply {
             layoutManager = LinearLayoutManager(this@RoomActivity)
+            (layoutManager as LinearLayoutManager).reverseLayout = true
+            (layoutManager as LinearLayoutManager).stackFromEnd = true
             setHasFixedSize(true)
             adapter = noteAdapter
         }
