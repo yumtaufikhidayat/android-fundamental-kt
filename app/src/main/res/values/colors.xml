@@ -17,4 +17,6 @@
     <color name="colorSubtitle">#757575</color>
     <color name="pink_500">#D81B60</color>
     <color name="pink_200">#FF8FAF</color>
+
+    <color name="placeholder">#6FB6B6B6</color>
 </resources>

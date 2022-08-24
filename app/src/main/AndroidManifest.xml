@@ -12,6 +12,10 @@
     android:supportsRtl="true"
     android:theme="@style/Theme.AndroidFundamental">
     <activity
+        android:name=".activity.RoomActivity"
+        android:theme="@style/Theme.DayNight.AndroidFundamental"
+        android:exported="false" />
+    <activity
         android:name=".activity.RoomNoteAddUpdateActivity"
         android:theme="@style/Theme.DayNight.AndroidFundamental"
         android:exported="false" />
@@ -123,7 +127,7 @@
         android:name=".activity.VolumeActivity"
         android:exported="false" />
     <activity
-        android:name=".activity.RoomActivity"
+        android:name=".activity.NewsActivity"
         android:theme="@style/Theme.DayNight.AndroidFundamental"
         android:exported="true">
         <intent-filter>
@@ -134,5 +138,4 @@
         <nav-graph android:value="@navigation/main_navigation" />
     </activity>
 </application>
-
 </manifest>
