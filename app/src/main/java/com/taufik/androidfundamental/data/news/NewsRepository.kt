@@ -20,6 +20,8 @@ class NewsRepository private constructor(
     private val result = MediatorLiveData<Result<List<NewsEntity>>>()
     private val apiKey = BuildConfig.API_KEY
 
+    val getBookmarkedNews: LiveData<List<NewsEntity>> = newsDao.getBookmarkedNews()
+
     fun getHeadlineNews(): LiveData<Result<List<NewsEntity>>> {
         result.value = Result.Loading
         val client = apiService.getNews(apiKey)
@@ -57,6 +59,13 @@ class NewsRepository private constructor(
         }
 
         return result
+    }
+
+    fun setBookmarkedNews(newsEntity: NewsEntity, bookmakState: Boolean) {
+        appExecutors.diskIO.execute {
+            newsEntity.isBookmarked = bookmakState
+            newsDao.updateNews(newsEntity)
+        }
     }
 
     companion object {

@@ -31,44 +31,50 @@ class NewsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        getParcelData()
-        initAdapter()
-        setData()
-    }
-
-    private fun getParcelData() {
-        tabName = arguments?.getString(ARG_TAB)
-    }
-
-    private fun initAdapter() = with(binding){
-        newsAdapter = NewsAdapter()
-        rvNews.apply {
-            layoutManager = LinearLayoutManager(context)
-            setHasFixedSize(true)
-            adapter = newsAdapter
-        }
-    }
-
-    private fun setData() = with(binding) {
         val factory: NewsViewModelFactory = NewsViewModelFactory.getInstance(requireContext())
         val viewModel: NewsViewModel by viewModels {
             factory
         }
 
-        if (tabName == TAB_NEWS) {
-            viewModel.getHeadlineNews.observe(viewLifecycleOwner) {
-                if (it != null) {
-                    when (it) {
-                        is Result.Loading -> showLoading(true)
-                        is Result.Success -> {
-                            showLoading(false)
-                            newsAdapter?.submitList(it.data)
-                        }
-                        is Result.Error -> {
-                            showLoading(false)
-                            Toast.makeText(requireContext(), "Terjadi kesalahan ${it.error}", Toast.LENGTH_SHORT).show()
+        tabName = arguments?.getString(ARG_TAB)
+
+        newsAdapter = NewsAdapter {
+            if (it.isBookmarked) {
+                viewModel.deleteNews(it)
+            } else {
+                viewModel.saveNews(it)
+            }
+        }
+
+        binding.rvNews.apply {
+            layoutManager = LinearLayoutManager(context)
+            setHasFixedSize(true)
+            adapter = newsAdapter
+        }
+
+        when (tabName) {
+            TAB_NEWS -> {
+                viewModel.getHeadlineNews.observe(viewLifecycleOwner) {
+                    if (it != null) {
+                        when (it) {
+                            is Result.Loading -> showLoading(true)
+                            is Result.Success -> {
+                                showLoading(false)
+                                newsAdapter?.submitList(it.data)
+                            }
+                            is Result.Error -> {
+                                showLoading(false)
+                                Toast.makeText(requireContext(), "Terjadi kesalahan ${it.error}", Toast.LENGTH_SHORT).show()
+                            }
                         }
                     }
+                }
+            }
+
+            TAB_BOOKMARK -> {
+                viewModel.getBookmarkedNews.observe(viewLifecycleOwner) {
+                    showLoading(false)
+                    newsAdapter?.submitList(it)
                 }
             }
         }
