@@ -21,7 +21,7 @@ class NewsFragment : Fragment() {
     private var _binding: FragmentNewsBinding? = null
     private val binding get() = _binding!!
 
-    private lateinit var newsAdapter: NewsAdapter
+    private var newsAdapter: NewsAdapter? = null
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         _binding = FragmentNewsBinding.inflate(layoutInflater, container, false)
@@ -62,7 +62,7 @@ class NewsFragment : Fragment() {
                         is Result.Loading -> showLoading(true)
                         is Result.Success -> {
                             showLoading(false)
-                            newsAdapter.submitList(it.data)
+                            newsAdapter?.submitList(it.data)
                         }
                         is Result.Error -> {
                             showLoading(false)
@@ -81,6 +81,7 @@ class NewsFragment : Fragment() {
     override fun onDestroy() {
         super.onDestroy()
         _binding = null
+        newsAdapter = null
     }
 
     companion object {
