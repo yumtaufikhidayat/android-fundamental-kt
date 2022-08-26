@@ -16,11 +16,10 @@ import com.taufik.androidfundamental.factory.NewsViewModelFactory
 import com.taufik.androidfundamental.viewmodel.NewsViewModel
 
 class NewsFragment : Fragment() {
-    private var tabName: String? = null
-
     private var _binding: FragmentNewsBinding? = null
     private val binding get() = _binding!!
 
+    private var tabName: String? = null
     private var newsAdapter: NewsAdapter? = null
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
