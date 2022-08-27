@@ -29,7 +29,7 @@ class NewsAdapter(
         val news = getItem(position)
         holder.bind(news)
 
-        val ivBookmark =holder.binding.ivBookmark
+        val ivBookmark = holder.binding.ivBookmark
         if (news.isBookmarked) {
             ivBookmark.setImageDrawable(ContextCompat.getDrawable(ivBookmark.context, R.drawable.ic_bookmarked_white))
         } else {
@@ -41,9 +41,7 @@ class NewsAdapter(
         }
     }
 
-    class MyViewHolder(val binding: ItemNewsBinding) : RecyclerView.ViewHolder(
-        binding.root
-    ) {
+    class MyViewHolder(val binding: ItemNewsBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(news: NewsEntity) = with(binding) {
             tvItemTitle.text = news.title
             tvItemPublishedDate.text = DateFormatter.formatDate(news.publishedAt)
