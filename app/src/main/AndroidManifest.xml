@@ -3,6 +3,8 @@
     package="com.taufik.androidfundamental">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS" />
 
 <application
     android:allowBackup="true"
@@ -11,6 +13,22 @@
     android:roundIcon="@mipmap/ic_launcher_round"
     android:supportsRtl="true"
     android:theme="@style/Theme.AndroidFundamental">
+    <receiver
+        android:name="com.taufik.androidfundamental.receiver.SmsReceiver"
+        android:exported="true"
+        android:enabled="true">
+        <intent-filter>
+            <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+        </intent-filter>
+    </receiver>
+    <activity
+        android:name=".activity.SmsReceiverActivity"
+        android:theme="@style/Theme.Broadcast.SmsReceiver"
+        android:exported="false" />
+    <activity
+        android:name=".activity.NewsActivity"
+        android:theme="@style/Theme.DayNight.AndroidFundamental"
+        android:exported="false" />
     <activity
         android:name=".activity.RoomActivity"
         android:theme="@style/Theme.DayNight.AndroidFundamental"
@@ -127,12 +145,11 @@
         android:name=".activity.VolumeActivity"
         android:exported="false" />
     <activity
-        android:name=".activity.NewsActivity"
+        android:name=".activity.BroadcastReceiverActivity"
         android:theme="@style/Theme.DayNight.AndroidFundamental"
         android:exported="true">
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
-
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
         <nav-graph android:value="@navigation/main_navigation" />

@@ -107,4 +107,7 @@
     <style name="Theme.AndroidFundamental.AppBarOverlay"
         parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
     <style name="Theme.AndroidFundamental.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Theme.Broadcast.SmsReceiver" parent="Theme.MaterialComponents.DayNight.Dialog" />
+
 </resources>

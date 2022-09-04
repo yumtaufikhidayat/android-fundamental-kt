@@ -205,9 +205,17 @@
     <string name="changed">Satu item berhasil diubah</string>
     <string name="deleted">Satu item berhasil dihapus</string>
 
-
     <string name="home">Home</string>
     <string name="bookmark">Bookmark</string>
     <string name="published_date">Published Date</string>
     <string name="save_bookmark">Save Bookmark?</string>
+
+    <string name="this_sms_receiver_app">Ini Aplikasi Sms Receiver</string>
+    <string name="download_file">Download a File</string>
+    <string name="coming_from">Coming From</string>
+    <string name="this_play">Oii, main kesini jadi nggak? sekarang yak.</string>
+    <string name="close">Tutup</string>
+    <string name="check_sms_permission">Check SMS Permission</string>
+    <string name="incoming_message">Incoming Message</string>
+    <string name="from">from : %s</string>
 </resources>
