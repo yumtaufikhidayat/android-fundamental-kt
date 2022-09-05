@@ -13,6 +13,9 @@
     android:roundIcon="@mipmap/ic_launcher_round"
     android:supportsRtl="true"
     android:theme="@style/Theme.AndroidFundamental">
+    <service
+        android:name=".service.DownloadService"
+        android:permission="android.permission.BIND_JOB_SERVICE"/>
     <receiver
         android:name="com.taufik.androidfundamental.receiver.SmsReceiver"
         android:exported="true"

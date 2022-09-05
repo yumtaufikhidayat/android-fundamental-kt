@@ -23,4 +23,11 @@
         android:text="@string/check_sms_permission"
         app:layout_constraintTop_toBottomOf="@id/tvSmsReceiverApp" />
 
+    <Button
+        android:id="@+id/btnDownload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/download_file"
+        app:layout_constraintTop_toBottomOf="@id/btnCheckPermission" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
