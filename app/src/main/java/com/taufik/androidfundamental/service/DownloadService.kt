@@ -27,6 +27,6 @@ class DownloadService : JobIntentService() {
     }
 
     companion object {
-        val TAG = DownloadService::class.java.simpleName
+        val TAG: String = DownloadService::class.java.simpleName
     }
 }

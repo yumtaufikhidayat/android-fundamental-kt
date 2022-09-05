@@ -9,6 +9,7 @@ import android.content.pm.PackageManager
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import com.taufik.androidfundamental.databinding.ActivityBroadcastReceiverBinding
 import com.taufik.androidfundamental.permission.PermissionManager
@@ -44,11 +45,22 @@ class BroadcastReceiverActivity : AppCompatActivity() {
 
     private fun setAction() = with(binding) {
         btnCheckPermission.setOnClickListener {
+//            requestPermissionLauncher.launch(Manifest.permission.RECEIVE_SMS)
             PermissionManager.check(this@BroadcastReceiverActivity, Manifest.permission.RECEIVE_SMS, SMS_REQUEST_CODE)
         }
 
         btnDownload.setOnClickListener {
             startService(Intent(this@BroadcastReceiverActivity, DownloadService::class.java))
+        }
+    }
+
+    private var requestPermissionLauncher = registerForActivityResult(
+        ActivityResultContracts.RequestPermission()
+    ) {
+        if (it) {
+            showToast("Sms permission receiver diterima")
+        } else {
+            showToast("Sms permission receiver ditolak")
         }
     }
 
