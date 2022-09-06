@@ -12,7 +12,6 @@ import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import com.taufik.androidfundamental.databinding.ActivityBroadcastReceiverBinding
-import com.taufik.androidfundamental.permission.PermissionManager
 import com.taufik.androidfundamental.service.DownloadService
 
 class BroadcastReceiverActivity : AppCompatActivity() {
@@ -45,8 +44,7 @@ class BroadcastReceiverActivity : AppCompatActivity() {
 
     private fun setAction() = with(binding) {
         btnCheckPermission.setOnClickListener {
-//            requestPermissionLauncher.launch(Manifest.permission.RECEIVE_SMS)
-            PermissionManager.check(this@BroadcastReceiverActivity, Manifest.permission.RECEIVE_SMS, SMS_REQUEST_CODE)
+            requestPermissionLauncher.launch(Manifest.permission.RECEIVE_SMS)
         }
 
         btnDownload.setOnClickListener {
