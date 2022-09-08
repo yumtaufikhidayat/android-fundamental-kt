@@ -11,9 +11,9 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.taufik.androidfundamental.R
 import com.taufik.androidfundamental.data.Note
-import com.taufik.androidfundamental.databinding.ActivityNoteAddUpdateBinding
 import com.taufik.androidfundamental.database.sqlite.DatabaseContract
 import com.taufik.androidfundamental.database.sqlite.NoteHelper
+import com.taufik.androidfundamental.databinding.ActivityNoteAddUpdateBinding
 import java.text.SimpleDateFormat
 import java.util.*
 

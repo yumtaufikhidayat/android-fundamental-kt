@@ -6,8 +6,8 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.taufik.androidfundamental.activity.RoomNoteAddUpdateActivity
-import com.taufik.androidfundamental.databinding.ItemNoteBinding
 import com.taufik.androidfundamental.database.room.NoteEntity
+import com.taufik.androidfundamental.databinding.ItemNoteBinding
 import com.taufik.androidfundamental.utils.NoteDiffCallback
 
 class RoomNoteAdapter: RecyclerView.Adapter<RoomNoteAdapter.ViewHolder>() {
