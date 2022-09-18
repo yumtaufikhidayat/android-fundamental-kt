@@ -2,8 +2,11 @@ package com.taufik.androidfundamental.activity
 
 import android.app.NotificationChannel
 import android.app.NotificationManager
+import android.app.PendingIntent
 import android.content.Context
+import android.content.Intent
 import android.graphics.BitmapFactory
+import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -32,8 +35,17 @@ class NotificationBuilderActivity : AppCompatActivity() {
 
     private fun sendNotification() = with(binding) {
         btnNotification.setOnClickListener {
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("http://dicoding.com"))
+            val pendingIntent = PendingIntent.getActivity(
+                this@NotificationBuilderActivity,
+                0,
+                intent,
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) PendingIntent.FLAG_IMMUTABLE else 0
+            )
+
             val mNotificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
             val mBuilder = NotificationCompat.Builder(this@NotificationBuilderActivity, CHANNEL_ID)
+                .setContentIntent(pendingIntent)
                 .setSmallIcon(R.drawable.ic_outline_notification)
                 .setLargeIcon(BitmapFactory.decodeResource(resources, R.drawable.ic_outline_notification))
                 .setContentTitle(resources.getString(R.string.content_title))
