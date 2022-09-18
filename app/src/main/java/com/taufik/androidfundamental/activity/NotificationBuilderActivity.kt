@@ -35,12 +35,7 @@ class NotificationBuilderActivity : AppCompatActivity() {
             val mNotificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
             val mBuilder = NotificationCompat.Builder(this@NotificationBuilderActivity, CHANNEL_ID)
                 .setSmallIcon(R.drawable.ic_outline_notification)
-                .setLargeIcon(
-                    BitmapFactory.decodeResource(
-                        resources,
-                        R.drawable.ic_outline_notification
-                    )
-                )
+                .setLargeIcon(BitmapFactory.decodeResource(resources, R.drawable.ic_outline_notification))
                 .setContentTitle(resources.getString(R.string.content_title))
                 .setContentText(resources.getString(R.string.content_text))
                 .setSubText(resources.getString(R.string.subtext))
