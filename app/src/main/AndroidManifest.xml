@@ -15,7 +15,7 @@
     android:theme="@style/Theme.AndroidFundamental">
     <service
         android:name=".service.DownloadService"
-        android:permission="android.permission.BIND_JOB_SERVICE"/>
+        android:permission="android.permission.BIND_JOB_SERVICE" />
     <receiver
         android:name="com.taufik.androidfundamental.receiver.SmsReceiver"
         android:exported="true"
@@ -24,6 +24,10 @@
             <action android:name="android.provider.Telephony.SMS_RECEIVED" />
         </intent-filter>
     </receiver>
+    <activity
+        android:name=".activity.BroadcastReceiverActivity"
+        android:theme="@style/Theme.Broadcast.SmsReceiver"
+        android:exported="false" />
     <activity
         android:name=".activity.SmsReceiverActivity"
         android:theme="@style/Theme.Broadcast.SmsReceiver"
@@ -148,7 +152,7 @@
         android:name=".activity.VolumeActivity"
         android:exported="false" />
     <activity
-        android:name=".activity.BroadcastReceiverActivity"
+        android:name=".activity.NotificationBuilderActivity"
         android:theme="@style/Theme.DayNight.AndroidFundamental"
         android:exported="true">
         <intent-filter>
