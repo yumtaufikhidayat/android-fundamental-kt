@@ -24,6 +24,21 @@
             <action android:name="android.provider.Telephony.SMS_RECEIVED" />
         </intent-filter>
     </receiver>
+
+    <activity
+        android:name=".activity.DetailTaskBackStackActivity"
+        android:theme="@style/Theme.DayNight.AndroidFundamental"
+        android:parentActivityName=".activity.TaskBackStackActivity"
+        android:label="@string/activity_detail"
+        android:exported="true" >
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".activity.TaskBackStackActivity"/>
+    </activity>
+    <activity
+        android:name=".activity.NotificationBuilderActivity"
+        android:theme="@style/Theme.Broadcast.SmsReceiver"
+        android:exported="false" />
     <activity
         android:name=".activity.BroadcastReceiverActivity"
         android:theme="@style/Theme.Broadcast.SmsReceiver"
@@ -152,14 +167,15 @@
         android:name=".activity.VolumeActivity"
         android:exported="false" />
     <activity
-        android:name=".activity.NotificationBuilderActivity"
+        android:name=".activity.TaskBackStackActivity"
+        android:launchMode="singleTop"
         android:theme="@style/Theme.DayNight.AndroidFundamental"
         android:exported="true">
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
-        <nav-graph android:value="@navigation/main_navigation" />
+<!--        <nav-graph android:value="@navigation/main_navigation" />-->
     </activity>
 </application>
 </manifest>
