@@ -233,4 +233,13 @@
     <string name="notification_message">Do you have any plan this weekend? Let\'s hangout</string>
     <string name="detail_title">Hola, Good News</string>
     <string name="detail_message">Now you can learn android in Dicoding</string>
+
+    <string name="one_time_alarm">One Time Alarm</string>
+    <string name="alarm_date">Tanggal Alarm</string>
+    <string name="set_one_time_alarm">Set One Time Alarm</string>
+    <string name="alarm_message">Pesan Alarm</string>
+    <string name="repeating_alarm">Repeating Alarm</string>
+    <string name="set_repeating_alarm">Set Repeating Alarm</string>
+    <string name="cancel_alarm">Batalkan Alarm</string>
+    <string name="alarm_time">Waktu Alarm</string>
 </resources>

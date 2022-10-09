@@ -5,6 +5,8 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.RECEIVE_SMS"/>
     <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
 
 <application
     android:allowBackup="true"
@@ -13,60 +15,71 @@
     android:roundIcon="@mipmap/ic_launcher_round"
     android:supportsRtl="true"
     android:theme="@style/Theme.AndroidFundamental">
+
     <service
         android:name=".service.DownloadService"
         android:permission="android.permission.BIND_JOB_SERVICE" />
+
     <receiver
         android:name="com.taufik.androidfundamental.receiver.SmsReceiver"
-        android:exported="true"
-        android:enabled="true">
+        android:enabled="true"
+        android:exported="true">
         <intent-filter>
             <action android:name="android.provider.Telephony.SMS_RECEIVED" />
         </intent-filter>
     </receiver>
 
+    <receiver
+        android:name="com.taufik.androidfundamental.receiver.AlarmReceiver"
+        android:enabled="true"
+        android:exported="true"/>
+
     <activity
         android:name=".activity.DetailTaskBackStackActivity"
-        android:theme="@style/Theme.DayNight.AndroidFundamental"
-        android:parentActivityName=".activity.TaskBackStackActivity"
+        android:exported="true"
         android:label="@string/activity_detail"
-        android:exported="true" >
+        android:parentActivityName=".activity.TaskBackStackActivity"
+        android:theme="@style/Theme.DayNight.AndroidFundamental">
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
-            android:value=".activity.TaskBackStackActivity"/>
+            android:value=".activity.TaskBackStackActivity" />
     </activity>
     <activity
+        android:name=".activity.TaskBackStackActivity"
+        android:exported="false"
+        android:theme="@style/Theme.Broadcast.SmsReceiver" />
+    <activity
         android:name=".activity.NotificationBuilderActivity"
-        android:theme="@style/Theme.Broadcast.SmsReceiver"
-        android:exported="false" />
+        android:exported="false"
+        android:theme="@style/Theme.Broadcast.SmsReceiver" />
     <activity
         android:name=".activity.BroadcastReceiverActivity"
-        android:theme="@style/Theme.Broadcast.SmsReceiver"
-        android:exported="false" />
+        android:exported="false"
+        android:theme="@style/Theme.Broadcast.SmsReceiver" />
     <activity
         android:name=".activity.SmsReceiverActivity"
-        android:theme="@style/Theme.Broadcast.SmsReceiver"
-        android:exported="false" />
+        android:exported="false"
+        android:theme="@style/Theme.Broadcast.SmsReceiver" />
     <activity
         android:name=".activity.NewsActivity"
-        android:theme="@style/Theme.DayNight.AndroidFundamental"
-        android:exported="false" />
+        android:exported="false"
+        android:theme="@style/Theme.DayNight.AndroidFundamental" />
     <activity
         android:name=".activity.RoomActivity"
-        android:theme="@style/Theme.DayNight.AndroidFundamental"
-        android:exported="false" />
+        android:exported="false"
+        android:theme="@style/Theme.DayNight.AndroidFundamental" />
     <activity
         android:name=".activity.RoomNoteAddUpdateActivity"
-        android:theme="@style/Theme.DayNight.AndroidFundamental"
-        android:exported="false" />
+        android:exported="false"
+        android:theme="@style/Theme.DayNight.AndroidFundamental" />
     <activity
         android:name=".activity.NoteAddUpdateActivity"
-        android:theme="@style/Theme.DayNight.AndroidFundamental"
-        android:exported="false" />
+        android:exported="false"
+        android:theme="@style/Theme.DayNight.AndroidFundamental" />
     <activity
         android:name=".activity.NoteSQLiteActivity"
-        android:theme="@style/Theme.DayNight.AndroidFundamental"
-        android:exported="false" />
+        android:exported="false"
+        android:theme="@style/Theme.DayNight.AndroidFundamental" />
     <activity
         android:name=".activity.DataStoreActivity"
         android:exported="false" />
@@ -167,15 +180,16 @@
         android:name=".activity.VolumeActivity"
         android:exported="false" />
     <activity
-        android:name=".activity.TaskBackStackActivity"
+        android:name=".activity.OneTimeAlarmManagerActivity"
+        android:exported="true"
         android:launchMode="singleTop"
-        android:theme="@style/Theme.DayNight.AndroidFundamental"
-        android:exported="true">
+        android:theme="@style/Theme.DayNight.AndroidFundamental">
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
+
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
-<!--        <nav-graph android:value="@navigation/main_navigation" />-->
+        <nav-graph android:value="@navigation/main_navigation" />
     </activity>
 </application>
 </manifest>
