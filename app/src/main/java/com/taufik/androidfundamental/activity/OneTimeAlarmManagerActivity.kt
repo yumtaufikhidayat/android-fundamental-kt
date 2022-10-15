@@ -9,8 +9,7 @@ import com.taufik.androidfundamental.utils.TimePickerFragment
 import java.text.SimpleDateFormat
 import java.util.*
 
-class OneTimeAlarmManagerActivity : AppCompatActivity(),
-    DatePickerFragment.DialogDateListener, TimePickerFragment.DialogTimeListener{
+class OneTimeAlarmManagerActivity : AppCompatActivity(), DatePickerFragment.DialogDateListener, TimePickerFragment.DialogTimeListener {
 
     companion object {
         private const val DATE_PICKER_TAG = "DatePicker"
