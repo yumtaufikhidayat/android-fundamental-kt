@@ -125,10 +125,23 @@
         app:layout_constraintEnd_toEndOf="@id/tvOnceTime"/>
 
     <Button
-        android:id="@+id/btnSetRepeatingAlarm"
-        android:layout_width="match_parent"
+        android:id="@+id/btnCancelRepeatingAlarm"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:text="@string/cancel_alarm"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintTop_toBottomOf="@id/etRepeatingAlarmMessage"
+        app:layout_constraintStart_toStartOf="@id/btnSetOnceAlarm"
+        app:layout_constraintEnd_toStartOf="@id/btnSetRepeatingAlarm"/>
+
+    <Button
+        android:id="@+id/btnSetRepeatingAlarm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
         android:text="@string/set_repeating_alarm"
-        app:layout_constraintTop_toBottomOf="@id/etRepeatingAlarmMessage"/>
+        app:layout_constraintTop_toBottomOf="@id/etRepeatingAlarmMessage"
+        app:layout_constraintStart_toEndOf="@id/btnCancelRepeatingAlarm"
+        app:layout_constraintEnd_toEndOf="@id/btnSetOnceAlarm"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
