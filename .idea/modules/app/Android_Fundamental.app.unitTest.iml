@@ -187,5 +187,4 @@
     <orderEntry type="library" scope="TEST" name="Gradle: de.hdodenhof:circleimageview:3.1.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.loopj.android:android-async-http:1.4.11@aar" level="project" />
   </component>
-  <component name="TestModuleProperties" production-module="Android_Fundamental.app.main" />
 </module>
