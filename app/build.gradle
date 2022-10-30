@@ -11,13 +11,14 @@ android {
 
     defaultConfig {
         applicationId "com.taufik.androidfundamental"
-        minSdk 23
+        minSdk 28
         targetSdk 31
         versionCode 11
         versionName "1.1"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         buildConfigField("String", "API_KEY", '"db874e166f4c473e9132d19a45135274"')
+        buildConfigField("String", "API_KEY_WEATHER", '"ef6b0755aea567b2579c89e984a81e28"')
     }
 
     buildTypes {
@@ -103,4 +104,7 @@ dependencies {
     def roomVersion = "2.4.3"
     implementation "androidx.room:room-runtime:$roomVersion"
     kapt "androidx.room:room-compiler:$roomVersion"
+
+//    Work Manager
+    implementation "androidx.work:work-runtime:2.5.0"
 }

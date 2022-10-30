@@ -32,7 +32,11 @@
     <receiver
         android:name="com.taufik.androidfundamental.receiver.AlarmReceiver"
         android:enabled="true"
-        android:exported="true"/>
+        android:exported="true" />
+
+    <activity android:name=".activity.AlarmManagerActivity"
+        android:exported="false"
+        android:theme="@style/Theme.DayNight.AndroidFundamental"/>
 
     <activity
         android:name=".activity.DetailTaskBackStackActivity"
@@ -180,7 +184,7 @@
         android:name=".activity.VolumeActivity"
         android:exported="false" />
     <activity
-        android:name=".activity.AlarmManagerActivity"
+        android:name=".activity.WorkManagerActivity"
         android:exported="true"
         android:launchMode="singleTop"
         android:theme="@style/Theme.DayNight.AndroidFundamental">
