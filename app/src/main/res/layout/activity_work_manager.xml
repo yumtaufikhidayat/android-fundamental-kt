@@ -31,10 +31,30 @@
         android:id="@+id/btnOneTimeTask"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAllCaps="false"
         android:text="@string/run_one_time_task"
         android:layout_marginTop="4dp"
         app:layout_constraintTop_toBottomOf="@id/etCity"/>
+
+    <Button
+        android:id="@+id/btnPeriodicTask"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/run_periodic_task"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintTop_toBottomOf="@id/btnOneTimeTask"
+        app:layout_constraintStart_toStartOf="@id/btnOneTimeTask"
+        app:layout_constraintEnd_toStartOf="@id/btnCancelTask"/>
+
+    <Button
+        android:id="@+id/btnCancelTask"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:enabled="false"
+        android:text="@string/cancel_periodic_task"
+        app:layout_constraintTop_toTopOf="@id/btnPeriodicTask"
+        app:layout_constraintStart_toEndOf="@id/btnPeriodicTask"
+        app:layout_constraintEnd_toEndOf="@id/btnOneTimeTask"/>
 
     <TextView
         android:id="@+id/tvStatus"
@@ -42,6 +62,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="@string/status"
-        app:layout_constraintTop_toBottomOf="@id/btnOneTimeTask"
+        app:layout_constraintTop_toBottomOf="@id/btnPeriodicTask"
         app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
